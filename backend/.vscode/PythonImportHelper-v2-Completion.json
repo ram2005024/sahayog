@@ -1,11 +1,820 @@
 [
     {
-        "label": "main",
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "health_router",
+        "importPath": "app.apis.health_router",
+        "description": "app.apis.health_router",
+        "isExtraImport": true,
+        "detail": "app.apis.health_router",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "importPath": "redis",
+        "description": "redis",
+        "isExtraImport": true,
+        "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "async_sessionmaker",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Console",
+        "importPath": "rich.console",
+        "description": "rich.console",
+        "isExtraImport": true,
+        "detail": "rich.console",
+        "documentation": {}
+    },
+    {
+        "label": "Theme",
+        "importPath": "rich.theme",
+        "description": "rich.theme",
+        "isExtraImport": true,
+        "detail": "rich.theme",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "importPath": "rich.traceback",
+        "description": "rich.traceback",
+        "isExtraImport": true,
+        "detail": "rich.traceback",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "RequestValidationError",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Panel",
+        "importPath": "rich.panel",
+        "description": "rich.panel",
+        "isExtraImport": true,
+        "detail": "rich.panel",
+        "documentation": {}
+    },
+    {
+        "label": "Panel",
+        "importPath": "rich.panel",
+        "description": "rich.panel",
+        "isExtraImport": true,
+        "detail": "rich.panel",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "isExtraImport": true,
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "isExtraImport": true,
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "AppException",
+        "importPath": "app.exceptions.custom_base_exception",
+        "description": "app.exceptions.custom_base_exception",
+        "isExtraImport": true,
+        "detail": "app.exceptions.custom_base_exception",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "rich.text",
+        "description": "rich.text",
+        "isExtraImport": true,
+        "detail": "rich.text",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPMiddleware",
+        "importPath": "starlette.middleware.base",
+        "description": "starlette.middleware.base",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "include_base_router",
+        "importPath": "app.apis.base_router",
+        "description": "app.apis.base_router",
+        "isExtraImport": true,
+        "detail": "app.apis.base_router",
+        "documentation": {}
+    },
+    {
+        "label": "exception_handler_caller",
+        "importPath": "app.exceptions.exception_handler",
+        "description": "app.exceptions.exception_handler",
+        "isExtraImport": true,
+        "detail": "app.exceptions.exception_handler",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingMiddleware",
+        "importPath": "app.middlewares.logger_middleware",
+        "description": "app.middlewares.logger_middleware",
+        "isExtraImport": true,
+        "detail": "app.middlewares.logger_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"backend\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"backend\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"backend\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"backend\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"backend\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
         "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def main():\n    print(\"Hello from backend!\")\nif __name__ == \"__main__\":\n    main()",
-        "detail": "main",
+        "importPath": "alembic.versions.02f1f2ed784c_init",
+        "description": "alembic.versions.02f1f2ed784c_init",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.02f1f2ed784c_init",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.02f1f2ed784c_init",
+        "description": "alembic.versions.02f1f2ed784c_init",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.02f1f2ed784c_init",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "config = context.config\nconfig.set_main_option(\"sqlalchemy.url\", settings.SYNC_DATABASE_URL)\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "include_base_router",
+        "kind": 2,
+        "importPath": "app.apis.base_router",
+        "description": "app.apis.base_router",
+        "peekOfCode": "def include_base_router(app: FastAPI):\n    app.include_router(health_router)",
+        "detail": "app.apis.base_router",
+        "documentation": {}
+    },
+    {
+        "label": "health_router",
+        "kind": 5,
+        "importPath": "app.apis.health_router",
+        "description": "app.apis.health_router",
+        "peekOfCode": "health_router = APIRouter()\n@health_router.get(\"/health\")\nasync def get_health_status():\n    status = {}\n    try:\n        async with engine.connect() as db:\n            await db.execute(text(\"SELECT 1\"))\n            status[\"database\"] = \"ok\"\n    except Exception as e:  # noqa: BLE001\n        status[\"database\"] = f\"error:{e}\"",
+        "detail": "app.apis.health_router",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "class Settings(BaseSettings):\n    # Database URLs\n    ASYNC_DATABASE_URL: str = \"\"\n    SYNC_DATABASE_URL: str = \"\"\n    # REDIS url\n    REDIS_URL: str = \"\"\n    model_config = SettingsConfigDict(env_file=\".env\", extra=\"ignore\")\nsettings = Settings()",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "settings = Settings()",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "peekOfCode": "engine = create_async_engine(settings.ASYNC_DATABASE_URL, echo=True)\nAsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=True, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:",
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessioLocal",
+        "kind": 5,
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "peekOfCode": "AsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=True, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:\n            yield db",
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "peekOfCode": "Base = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:\n            yield db\n        finally:\n            await db.close()\nsync_engine = create_engine(settings.SYNC_DATABASE_URL, echo=True)\nSyncSessionLocal = sessionmaker(",
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "sync_engine",
+        "kind": 5,
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "peekOfCode": "sync_engine = create_engine(settings.SYNC_DATABASE_URL, echo=True)\nSyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=True\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:",
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "SyncSessionLocal",
+        "kind": 5,
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "peekOfCode": "SyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=True\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:\n        db.rollback()",
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "theme",
+        "kind": 5,
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "peekOfCode": "theme = Theme(\n    {\n        \"info\": \"bold cyan\",\n        \"success\": \"bold green\",\n        \"warning\": \"bold yellow\",\n        \"error\": \"bold red\",\n        \"critical\": \"bold white on red\",\n        \"muted\": \"dim white\",\n        \"request\": \"bold bright_cyan\",\n        \"method\": \"bold magenta\",",
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 5,
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "peekOfCode": "console = Console(theme=theme, highlight=True, force_terminal=True)",
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "AppException",
+        "kind": 6,
+        "importPath": "app.exceptions.custom_base_exception",
+        "description": "app.exceptions.custom_base_exception",
+        "peekOfCode": "class AppException(Exception):\n    def __init__(\n        self,\n        message: str,\n        status_code: int = 400,\n        details: Any | None = None,\n        error_code: str | None = None,\n    ) -> None:\n        self.status_code = status_code\n        self.details = details",
+        "detail": "app.exceptions.custom_base_exception",
+        "documentation": {}
+    },
+    {
+        "label": "exception_handler_caller",
+        "kind": 2,
+        "importPath": "app.exceptions.exception_handler",
+        "description": "app.exceptions.exception_handler",
+        "peekOfCode": "def exception_handler_caller(app: FastAPI):\n    # ── App Exception ──────────────────────────────────────────\n    @app.exception_handler(AppException)\n    async def custom_exception(request: Request, exc: AppException):\n        rid = _req_id(request)\n        console.print(\n            Panel(\n                f\"[warning]⚠  APP EXCEPTION[/]\\n\\n\"\n                f\"[bold white]Route  :[/]  {request.method} {request.url.path}\\n\"\n                f\"[bold white]Code   :[/]  [{exc.status_code}]\\n\"",
+        "detail": "app.exceptions.exception_handler",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingMiddleware",
+        "kind": 6,
+        "importPath": "app.middlewares.logger_middleware",
+        "description": "app.middlewares.logger_middleware",
+        "peekOfCode": "class LoggingMiddleware(BaseHTTPMiddleware):\n    async def dispatch(self, request: Request, call_next):\n        request_id = str(uuid.uuid4())[:8].upper()\n        start = time.perf_counter()\n        request.state.request_id = request_id\n        # ── Incoming ──────────────────────────────────────────\n        incoming = Text()\n        incoming.append(\"  ⬆  INCOMING  \", style=\"bold white on dark_blue\")\n        incoming.append(\n            f\"  {request.method}  \", style=METHOD_COLORS.get(request.method, \"white\")",
+        "detail": "app.middlewares.logger_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "method_badge",
+        "kind": 2,
+        "importPath": "app.middlewares.logger_middleware",
+        "description": "app.middlewares.logger_middleware",
+        "peekOfCode": "def method_badge(method: str) -> str:\n    color = METHOD_COLORS.get(method, \"white\")\n    return f\"[{color}] {method} [/]\"\nclass LoggingMiddleware(BaseHTTPMiddleware):\n    async def dispatch(self, request: Request, call_next):\n        request_id = str(uuid.uuid4())[:8].upper()\n        start = time.perf_counter()\n        request.state.request_id = request_id\n        # ── Incoming ──────────────────────────────────────────\n        incoming = Text()",
+        "detail": "app.middlewares.logger_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "METHOD_COLORS",
+        "kind": 5,
+        "importPath": "app.middlewares.logger_middleware",
+        "description": "app.middlewares.logger_middleware",
+        "peekOfCode": "METHOD_COLORS = {\n    \"GET\": \"bold bright_green\",\n    \"POST\": \"bold bright_blue\",\n    \"PUT\": \"bold bright_yellow\",\n    \"PATCH\": \"bold bright_cyan\",\n    \"DELETE\": \"bold bright_red\",\n}\ndef method_badge(method: str) -> str:\n    color = METHOD_COLORS.get(method, \"white\")\n    return f\"[{color}] {method} [/]\"",
+        "detail": "app.middlewares.logger_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessResponse",
+        "kind": 6,
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "peekOfCode": "class SuccessResponse(BaseModel, Generic[T]):  # noqa: UP046\n    success: bool = True\n    message: str | None = None\n    data: T | None = None\nclass ErrorResponse(BaseModel):\n    success: bool = False\n    message: str\n    details: Any | None = None\n    error_code: str | None = None",
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorResponse",
+        "kind": 6,
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "peekOfCode": "class ErrorResponse(BaseModel):\n    success: bool = False\n    message: str\n    details: Any | None = None\n    error_code: str | None = None",
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "peekOfCode": "T = TypeVar(\"T\")\nclass SuccessResponse(BaseModel, Generic[T]):  # noqa: UP046\n    success: bool = True\n    message: str | None = None\n    data: T | None = None\nclass ErrorResponse(BaseModel):\n    success: bool = False\n    message: str\n    details: Any | None = None\n    error_code: str | None = None",
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI(title=\"sahayog\")\ninclude_base_router(app)\nexception_handler_caller(app)\napp.add_middleware(LoggingMiddleware)",
+        "detail": "app.main",
         "documentation": {}
     }
 ]

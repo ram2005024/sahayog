@@ -1,10 +1,73 @@
-# Python-generated files
+# Python cache and compiled files
 __pycache__/
 *.py[oc]
+
+# Build and distribution
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+*.egg
 
 # Virtual environments
-.venv
+.venv/
+venv/
+env/
+ENV/
+
+# Logs and runtime files
+*.log
+*.pid
+*.sqlite3
+
+# Coverage and testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# FastAPI specific
+# Uvicorn / Gunicorn reload artifacts
+*.db
+*.sqlite
+instance/
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+.dockerignore
+
+# Redis / Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Alembic migrations cache
+alembic.ini
+migrations/versions/*.pyc
+
+# Node frontend (if using Next.js with FastAPI)
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tailwind / shadcn/ui build artifacts
+*.css.map
