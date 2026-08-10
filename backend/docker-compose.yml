@@ -1,4 +1,4 @@
-
+version: "3.9"
 
 services:
   fastapi_app:
@@ -19,7 +19,7 @@ services:
     command: uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
   postgres:
-    image: postgres:17
+    image: postgis/postgis:17-3.4
     container_name: postgres
     restart: always
     env_file:

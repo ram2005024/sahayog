@@ -45,66 +45,51 @@
     },
     {
         "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "collections.abc",
         "documentation": {}
     },
     {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "collections.abc",
         "documentation": {}
     },
     {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "geoalchemy2",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "typing",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
+        "detail": "geoalchemy2",
         "documentation": {}
     },
     {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "geoalchemy2",
         "documentation": {}
     },
     {
-        "label": "Generic",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "geoalchemy2",
         "documentation": {}
     },
     {
-        "label": "TypeVar",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
         "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "op",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
+        "detail": "geoalchemy2",
         "documentation": {}
     },
     {
@@ -146,6 +131,86 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ARRAY",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -198,6 +263,14 @@
     },
     {
         "label": "engine",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
         "importPath": "app.core.db",
         "description": "app.core.db",
         "isExtraImport": true,
@@ -325,6 +398,118 @@
         "documentation": {}
     },
     {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Console",
         "importPath": "rich.console",
         "description": "rich.console",
@@ -346,6 +531,70 @@
         "description": "rich.traceback",
         "isExtraImport": true,
         "detail": "rich.traceback",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -471,6 +720,86 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "ENUM",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "ENUM",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -586,19 +915,37 @@
     {
         "label": "upgrade",
         "kind": 2,
-        "importPath": "alembic.versions.02f1f2ed784c_init",
-        "description": "alembic.versions.02f1f2ed784c_init",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
-        "detail": "alembic.versions.02f1f2ed784c_init",
+        "importPath": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
+        "description": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    op.create_table(\n        \"users\",\n        sa.Column(\n            \"role\",\n            sa.ARRAY(\n                postgresql.ENUM(\n                    \"CITIZEN\", \"VOLUNTEER\", \"COORDINATOR\", \"ADMIN\", name=\"user_roles\"\n                )",
+        "detail": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
         "documentation": {}
     },
     {
         "label": "downgrade",
         "kind": 2,
-        "importPath": "alembic.versions.02f1f2ed784c_init",
-        "description": "alembic.versions.02f1f2ed784c_init",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
-        "detail": "alembic.versions.02f1f2ed784c_init",
+        "importPath": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
+        "description": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),\n        sa.Column(\n            \"auth_name\", sa.VARCHAR(length=256), autoincrement=False, nullable=True\n        ),\n        sa.Column(\"auth_srid\", sa.INTEGER(), autoincrement=False, nullable=True),\n        sa.Column(",
+        "detail": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "description": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    op.create_table(\n        \"profile_audits\",\n        sa.Column(\"profile_id\", sa.Uuid(), nullable=False),\n        sa.Column(\"username\", sa.String(), nullable=False),\n        sa.Column(\"email\", sa.String(), nullable=False),\n        sa.Column(\"phone_no\", sa.String(), nullable=True),\n        sa.Column(\"picture\", sa.String(), nullable=True),\n        sa.Column(",
+        "detail": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "description": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    op.drop_index(\"idx_incidents_location\", table_name=\"incidents\")\n    op.drop_table(\"incidents\")\n    op.drop_index(\"idx_profile_audits_location\", table_name=\"profile_audits\")\n    op.drop_table(\"profile_audits\")",
+        "detail": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
         "documentation": {}
     },
     {
@@ -779,6 +1126,87 @@
         "description": "app.middlewares.logger_middleware",
         "peekOfCode": "METHOD_COLORS = {\n    \"GET\": \"bold bright_green\",\n    \"POST\": \"bold bright_blue\",\n    \"PUT\": \"bold bright_yellow\",\n    \"PATCH\": \"bold bright_cyan\",\n    \"DELETE\": \"bold bright_red\",\n}\ndef method_badge(method: str) -> str:\n    color = METHOD_COLORS.get(method, \"white\")\n    return f\"[{color}] {method} [/]\"",
         "detail": "app.middlewares.logger_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "kind": 6,
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "peekOfCode": "class BaseUserModel(Base):\n    __abstract__ = True\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True), default=uuid.uuid4, primary_key=True\n    )\n    created_at: Mapped[datetime] = mapped_column(\n        default=func.now(), server_default=func.now()\n    )\n    updated_at: Mapped[datetime] = mapped_column(\n        default=func.now(), onupdate=func.now()",
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "app.modules.auth.models.profiles.citizen_profile",
+        "description": "app.modules.auth.models.profiles.citizen_profile",
+        "peekOfCode": "class Profile(BaseUserModel):\n    __tablename__ = \"profiles\"\n    user_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\")\n    )\n    first_name: Mapped[str]\n    last_name: Mapped[str | None]\n    total_registered_incidents: Mapped[int] = mapped_column(default=0)\n    picture: Mapped[str | None]\n    location: Mapped[str | None] = mapped_column(",
+        "detail": "app.modules.auth.models.profiles.citizen_profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileAudit",
+        "kind": 6,
+        "importPath": "app.modules.auth.models.profiles.profile_audit",
+        "description": "app.modules.auth.models.profiles.profile_audit",
+        "peekOfCode": "class ProfileAudit(BaseUserModel):\n    __tablename__ = \"profile_audits\"\n    profile_id: Mapped[uuid.UUID]\n    username: Mapped[str]\n    email: Mapped[str]\n    phone_no: Mapped[str | None]\n    picture: Mapped[str | None]\n    location: Mapped[str | None] = mapped_column(\n        Geography(geometry_type=\"POINT\", srid=4326)\n    )",
+        "detail": "app.modules.auth.models.profiles.profile_audit",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "app.modules.auth.models.user",
+        "description": "app.modules.auth.models.user",
+        "peekOfCode": "class Role(str, Enum):\n    CITIZEN = \"citizen\"\n    VOLUNTEER = \"volunteer\"\n    COORDINATOR = \"coordinator\"\n    ADMIN = \"admin\"\nclass Providers(str, Enum):\n    MANUAL = \"manual\"\n    GOOGLE = \"google\"\n    FACEBOOK = \"facebook\"\nclass User(BaseUserModel):",
+        "detail": "app.modules.auth.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Providers",
+        "kind": 6,
+        "importPath": "app.modules.auth.models.user",
+        "description": "app.modules.auth.models.user",
+        "peekOfCode": "class Providers(str, Enum):\n    MANUAL = \"manual\"\n    GOOGLE = \"google\"\n    FACEBOOK = \"facebook\"\nclass User(BaseUserModel):\n    __tablename__ = \"users\"\n    role: Mapped[list[Role]] = mapped_column(\n        ARRAY(ENUM(Role, name=\"user_roles\")), default=lambda: [Role.CITIZEN]\n    )\n    is_active: Mapped[bool] = mapped_column(default=True)",
+        "detail": "app.modules.auth.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.modules.auth.models.user",
+        "description": "app.modules.auth.models.user",
+        "peekOfCode": "class User(BaseUserModel):\n    __tablename__ = \"users\"\n    role: Mapped[list[Role]] = mapped_column(\n        ARRAY(ENUM(Role, name=\"user_roles\")), default=lambda: [Role.CITIZEN]\n    )\n    is_active: Mapped[bool] = mapped_column(default=True)\n    username: Mapped[str] = mapped_column(unique=True, index=True)\n    email: Mapped[str] = mapped_column(unique=True)\n    phone_no: Mapped[str] = mapped_column(nullable=True)\n    hashed_password: Mapped[str] = mapped_column(nullable=True)",
+        "detail": "app.modules.auth.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Priority",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "peekOfCode": "class Priority(str, Enum):\n    HIGH = \"high\"\n    MEDIUM = \"medium\"\n    CRITICAL = \"critical\"\nclass IncidentCategory(str, Enum):\n    RESCUE = \"rescue\"\n    MEDICAL = \"medical\"\n    SHELTER = \"shelter\"\n    FOOD = \"food\"\n    OTHERS = \"others\"",
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCategory",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "peekOfCode": "class IncidentCategory(str, Enum):\n    RESCUE = \"rescue\"\n    MEDICAL = \"medical\"\n    SHELTER = \"shelter\"\n    FOOD = \"food\"\n    OTHERS = \"others\"\nclass Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]",
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "Incident",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "peekOfCode": "class Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]\n    user_profile_id: Mapped[uuid.UUID | None] = mapped_column(\n        ForeignKey(\"profiles.id\"), nullable=True\n    )\n    priority: Mapped[Priority] = mapped_column(default=Priority.MEDIUM)\n    incident_category: Mapped[IncidentCategory] = mapped_column(\n        ENUM(IncidentCategory, name=\"incident_category\")",
+        "detail": "app.modules.incident.models.incident",
         "documentation": {}
     },
     {

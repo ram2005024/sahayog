@@ -10,6 +10,7 @@ dependencies = [
     "asyncpg>=0.31.0",
     "authlib>=1.7.2",
     "fastapi[standard]>=0.141.1",
+    "geoalchemy2>=0.20.0",
     "psycopg2-binary>=2.9.12",
     "pwdlib[argon2]>=0.3.0",
     "redis>=8.1.0",
