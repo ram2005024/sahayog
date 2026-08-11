@@ -48,4 +48,4 @@ class Incident(BaseUserModel):
     reported_by: Mapped["Profile"] = relationship("Profile", back_populates="incident")
     profile_audit: Mapped["Profile|None"] = relationship(
         "profile_audits.id", back_populates="incidents"
-    )  # Exits when the user is even deleted
+    )  # Exists when the user is even deleted

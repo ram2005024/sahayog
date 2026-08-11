@@ -574,6 +574,22 @@
         "documentation": {}
     },
     {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -800,11 +816,99 @@
         "documentation": {}
     },
     {
+        "label": "FoodSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "OthersSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "RescueSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "ShelterSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "computed_field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCategory",
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "Priority",
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "Details",
+        "importPath": "app.modules.incident.schemas.annotation",
+        "description": "app.modules.incident.schemas.annotation",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.annotation",
         "documentation": {}
     },
     {
@@ -1207,6 +1311,69 @@
         "description": "app.modules.incident.models.incident",
         "peekOfCode": "class Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]\n    user_profile_id: Mapped[uuid.UUID | None] = mapped_column(\n        ForeignKey(\"profiles.id\"), nullable=True\n    )\n    priority: Mapped[Priority] = mapped_column(default=Priority.MEDIUM)\n    incident_category: Mapped[IncidentCategory] = mapped_column(\n        ENUM(IncidentCategory, name=\"incident_category\")",
         "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "Details",
+        "kind": 5,
+        "importPath": "app.modules.incident.schemas.annotation",
+        "description": "app.modules.incident.schemas.annotation",
+        "peekOfCode": "Details = RescueSchema | MedicalSchema | FoodSchema | OthersSchema | ShelterSchema",
+        "detail": "app.modules.incident.schemas.annotation",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCreateSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: str\n    longitude: str\n    details: Annotated[Details, Field(discriminator=\"type\")]\n# Different category schemas",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "RescueSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class RescueSchema(BaseModel):\n    type: Literal[IncidentCategory.RESCUE]\n    no_of_peoples_affected: str\n    no_of_volunteers_required: int = 1\n    life_threat: bool = False\n    @computed_field\n    @property\n    def is_team_required(self) -> bool:\n        return self.no_of_volunteers_required > 5\nclass MedicalSchema(BaseModel):",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "MedicalSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class MedicalSchema(BaseModel):\n    type: Literal[IncidentCategory.MEDICAL]\n    ambulance_required: bool = False\n    doctors_required: bool = False\n    life_threat: bool = False\n    blood_required: bool = False\nclass ShelterSchema(BaseModel):\n    type: Literal[IncidentCategory.SHELTER]\n    has_family: bool = False\n    no_of_people: int = 1",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "ShelterSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class ShelterSchema(BaseModel):\n    type: Literal[IncidentCategory.SHELTER]\n    has_family: bool = False\n    no_of_people: int = 1\nclass FoodSchema(BaseModel):\n    type: Literal[IncidentCategory.FOOD]\n    no_of_people: int = 1\n    has_elders: bool = False\nclass OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "FoodSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class FoodSchema(BaseModel):\n    type: Literal[IncidentCategory.FOOD]\n    no_of_people: int = 1\n    has_elders: bool = False\nclass OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]\n    no_of_people_affected: int = 1\n    life_threat: bool = False",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "OthersSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]\n    no_of_people_affected: int = 1\n    life_threat: bool = False",
+        "detail": "app.modules.incident.schemas.incident",
         "documentation": {}
     },
     {
