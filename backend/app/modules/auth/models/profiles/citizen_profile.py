@@ -27,6 +27,6 @@ class Profile(BaseUserModel):
     location_description: Mapped[str | None]
     emergency_phone_no: Mapped[str | None]
     user: Mapped["User"] = relationship("User", back_populates="profile")
-    registerd_incidents: Mapped[list["Incident"] | None] = relationship(
-        "Incident", cascade="all,delete-orphan"
+    registered_incidents: Mapped[list["Incident"] | None] = relationship(
+        "Incident", back_populates="reported_by"
     )

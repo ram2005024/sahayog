@@ -1,4 +1,4 @@
-from app.modules.incident.schemas.incident import (
+from app.modules.incident.schemas.incident_category_schema import (
     FoodSchema,
     MedicalSchema,
     OthersSchema,

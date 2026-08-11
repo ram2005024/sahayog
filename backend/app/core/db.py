@@ -8,7 +8,7 @@ from app.core.config import settings
 engine = create_async_engine(settings.ASYNC_DATABASE_URL, echo=True)
 
 AsyncSessioLocal = async_sessionmaker(
-    bind=engine, expire_on_commit=True, autoflush=False
+    bind=engine, expire_on_commit=False, autoflush=False
 )
 
 # Base
@@ -27,7 +27,7 @@ async def get_async_db():
 sync_engine = create_engine(settings.SYNC_DATABASE_URL, echo=True)
 
 SyncSessionLocal = sessionmaker(
-    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=True
+    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=False
 )
 
 

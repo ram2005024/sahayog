@@ -60,36 +60,27 @@
         "documentation": {}
     },
     {
-        "label": "geoalchemy2",
-        "kind": 6,
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
         "isExtraImport": true,
-        "importPath": "geoalchemy2",
-        "description": "geoalchemy2",
-        "detail": "geoalchemy2",
+        "detail": "collections.abc",
         "documentation": {}
     },
     {
-        "label": "Geography",
-        "importPath": "geoalchemy2",
-        "description": "geoalchemy2",
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
         "isExtraImport": true,
-        "detail": "geoalchemy2",
+        "detail": "collections.abc",
         "documentation": {}
     },
     {
-        "label": "Geography",
-        "importPath": "geoalchemy2",
-        "description": "geoalchemy2",
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
         "isExtraImport": true,
-        "detail": "geoalchemy2",
-        "documentation": {}
-    },
-    {
-        "label": "Geography",
-        "importPath": "geoalchemy2",
-        "description": "geoalchemy2",
-        "isExtraImport": true,
-        "detail": "geoalchemy2",
+        "detail": "collections.abc",
         "documentation": {}
     },
     {
@@ -174,19 +165,35 @@
         "documentation": {}
     },
     {
-        "label": "postgresql",
-        "importPath": "sqlalchemy.dialects",
-        "description": "sqlalchemy.dialects",
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects",
+        "detail": "sqlalchemy",
         "documentation": {}
     },
     {
-        "label": "postgresql",
-        "importPath": "sqlalchemy.dialects",
-        "description": "sqlalchemy.dialects",
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects",
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -214,6 +221,63 @@
         "documentation": {}
     },
     {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "geoalchemy2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
+        "detail": "geoalchemy2",
+        "documentation": {}
+    },
+    {
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
+        "isExtraImport": true,
+        "detail": "geoalchemy2",
+        "documentation": {}
+    },
+    {
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
+        "isExtraImport": true,
+        "detail": "geoalchemy2",
+        "documentation": {}
+    },
+    {
+        "label": "Geography",
+        "importPath": "geoalchemy2",
+        "description": "geoalchemy2",
+        "isExtraImport": true,
+        "detail": "geoalchemy2",
+        "documentation": {}
+    },
+    {
         "label": "fileConfig",
         "importPath": "logging.config",
         "description": "logging.config",
@@ -227,6 +291,22 @@
         "description": "app",
         "isExtraImport": true,
         "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -278,6 +358,14 @@
         "documentation": {}
     },
     {
+        "label": "get_async_db",
+        "importPath": "app.core.db",
+        "description": "app.core.db",
+        "isExtraImport": true,
+        "detail": "app.core.db",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -310,7 +398,63 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -331,6 +475,23 @@
         "description": "app.apis.health_router",
         "isExtraImport": true,
         "detail": "app.apis.health_router",
+        "documentation": {}
+    },
+    {
+        "label": "incident_router",
+        "importPath": "app.modules.incident.api.v1.incident_api",
+        "description": "app.modules.incident.api.v1.incident_api",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.api.v1.incident_api",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "redis",
+        "description": "redis",
+        "detail": "redis",
         "documentation": {}
     },
     {
@@ -375,6 +536,22 @@
     },
     {
         "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
         "importPath": "sqlalchemy.ext.asyncio",
         "description": "sqlalchemy.ext.asyncio",
         "isExtraImport": true,
@@ -534,6 +711,31 @@
         "documentation": {}
     },
     {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "redis.asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "redis.asyncio",
+        "description": "redis.asyncio",
+        "detail": "redis.asyncio",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -559,6 +761,38 @@
     },
     {
         "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -694,7 +928,23 @@
         "documentation": {}
     },
     {
+        "label": "AppException",
+        "importPath": "app.exceptions.custom_base_exception",
+        "description": "app.exceptions.custom_base_exception",
+        "isExtraImport": true,
+        "detail": "app.exceptions.custom_base_exception",
+        "documentation": {}
+    },
+    {
         "label": "ErrorResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessResponse",
         "importPath": "app.schemas.common",
         "description": "app.schemas.common",
         "isExtraImport": true,
@@ -716,6 +966,14 @@
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -816,43 +1074,228 @@
         "documentation": {}
     },
     {
-        "label": "FoodSchema",
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "app.dependencies.get_user",
+        "description": "app.dependencies.get_user",
+        "isExtraImport": true,
+        "detail": "app.dependencies.get_user",
+        "documentation": {}
+    },
+    {
+        "label": "get_idempotancy_key",
+        "importPath": "app.modules.incident.dependencies.incident",
+        "description": "app.modules.incident.dependencies.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.dependencies.incident",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_idempotancy_service",
+        "importPath": "app.modules.incident.dependencies.service_factory",
+        "description": "app.modules.incident.dependencies.service_factory",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.dependencies.service_factory",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_service",
+        "importPath": "app.modules.incident.dependencies.service_factory",
+        "description": "app.modules.incident.dependencies.service_factory",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.dependencies.service_factory",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCreateSchema",
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
         "isExtraImport": true,
         "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentReadBasic",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCreateSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCreateSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentIdempotancyService",
+        "importPath": "app.modules.incident.services.incident_idempotancy_service",
+        "description": "app.modules.incident.services.incident_idempotancy_service",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.services.incident_idempotancy_service",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentIdempotancyService",
+        "importPath": "app.modules.incident.services.incident_idempotancy_service",
+        "description": "app.modules.incident.services.incident_idempotancy_service",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.services.incident_idempotancy_service",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentService",
+        "importPath": "app.modules.incident.services.incident_service",
+        "description": "app.modules.incident.services.incident_service",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.services.incident_service",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentService",
+        "importPath": "app.modules.incident.services.incident_service",
+        "description": "app.modules.incident.services.incident_service",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.services.incident_service",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentIdempotancyKeyMissing",
+        "importPath": "app.modules.exceptions.incident_exceptions",
+        "description": "app.modules.exceptions.incident_exceptions",
+        "isExtraImport": true,
+        "detail": "app.modules.exceptions.incident_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentRepo",
+        "importPath": "app.modules.incident.repos.incident_repo",
+        "description": "app.modules.incident.repos.incident_repo",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.repos.incident_repo",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentRepo",
+        "importPath": "app.modules.incident.repos.incident_repo",
+        "description": "app.modules.incident.repos.incident_repo",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.repos.incident_repo",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentRepo",
+        "importPath": "app.modules.incident.repos.incident_repo",
+        "description": "app.modules.incident.repos.incident_repo",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.repos.incident_repo",
+        "documentation": {}
+    },
+    {
+        "label": "get_redis_service",
+        "importPath": "app.dependencies.service_factories",
+        "description": "app.dependencies.service_factories",
+        "isExtraImport": true,
+        "detail": "app.dependencies.service_factories",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_repo",
+        "importPath": "app.modules.incident.dependencies.repo_factory",
+        "description": "app.modules.incident.dependencies.repo_factory",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.dependencies.repo_factory",
+        "documentation": {}
+    },
+    {
+        "label": "from_shape",
+        "importPath": "geoalchemy2.shape",
+        "description": "geoalchemy2.shape",
+        "isExtraImport": true,
+        "detail": "geoalchemy2.shape",
+        "documentation": {}
+    },
+    {
+        "label": "Incident",
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "Priority",
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentCategory",
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "FoodSchema",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "MedicalSchema",
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "isExtraImport": true,
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "OthersSchema",
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "isExtraImport": true,
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "RescueSchema",
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "isExtraImport": true,
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "ShelterSchema",
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "isExtraImport": true,
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
@@ -865,6 +1308,30 @@
     },
     {
         "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "model_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -888,19 +1355,11 @@
         "documentation": {}
     },
     {
-        "label": "IncidentCategory",
-        "importPath": "app.modules.incident.models.incident",
-        "description": "app.modules.incident.models.incident",
+        "label": "Point",
+        "importPath": "shapely.geometry",
+        "description": "shapely.geometry",
         "isExtraImport": true,
-        "detail": "app.modules.incident.models.incident",
-        "documentation": {}
-    },
-    {
-        "label": "Priority",
-        "importPath": "app.modules.incident.models.incident",
-        "description": "app.modules.incident.models.incident",
-        "isExtraImport": true,
-        "detail": "app.modules.incident.models.incident",
+        "detail": "shapely.geometry",
         "documentation": {}
     },
     {
@@ -917,6 +1376,14 @@
         "description": "app.apis.base_router",
         "isExtraImport": true,
         "detail": "app.apis.base_router",
+        "documentation": {}
+    },
+    {
+        "label": "startup_redis",
+        "importPath": "app.core.startup",
+        "description": "app.core.startup",
+        "isExtraImport": true,
+        "detail": "app.core.startup",
         "documentation": {}
     },
     {
@@ -1019,6 +1486,42 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "description": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),",
+        "detail": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "description": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),\n        sa.Column(\n            \"auth_name\", sa.VARCHAR(length=256), autoincrement=False, nullable=True\n        ),\n        sa.Column(\"auth_srid\", sa.INTEGER(), autoincrement=False, nullable=True),",
+        "detail": "alembic.versions.180370086cb9_updated_the_relationship_attr_in_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "description": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # Create enum type first\n    incident_status_enum = postgresql.ENUM(\n        \"PENDING\",\n        \"RESOLVED\",\n        \"EN_ROUTE\",\n        \"ARRIVED\",\n        name=\"incident_status\",\n        create_type=True,",
+        "detail": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "description": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # Drop column first\n    op.drop_column(\"incidents\", \"incident_status\")\n    # Drop enum type\n    incident_status_enum = postgresql.ENUM(name=\"incident_status\")\n    incident_status_enum.drop(op.get_bind(), checkfirst=True)",
+        "detail": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
         "description": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    op.create_table(\n        \"users\",\n        sa.Column(\n            \"role\",\n            sa.ARRAY(\n                postgresql.ENUM(\n                    \"CITIZEN\", \"VOLUNTEER\", \"COORDINATOR\", \"ADMIN\", name=\"user_roles\"\n                )",
@@ -1050,6 +1553,24 @@
         "description": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    op.drop_index(\"idx_incidents_location\", table_name=\"incidents\")\n    op.drop_table(\"incidents\")\n    op.drop_index(\"idx_profile_audits_location\", table_name=\"profile_audits\")\n    op.drop_table(\"profile_audits\")",
         "detail": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
+        "description": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),",
+        "detail": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
+        "description": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),\n        sa.Column(\n            \"auth_name\", sa.VARCHAR(length=256), autoincrement=False, nullable=True\n        ),\n        sa.Column(\"auth_srid\", sa.INTEGER(), autoincrement=False, nullable=True),",
+        "detail": "alembic.versions.ef8650cfb7d6_updated_the_relationship_attr_in_",
         "documentation": {}
     },
     {
@@ -1093,7 +1614,7 @@
         "kind": 2,
         "importPath": "app.apis.base_router",
         "description": "app.apis.base_router",
-        "peekOfCode": "def include_base_router(app: FastAPI):\n    app.include_router(health_router)",
+        "peekOfCode": "def include_base_router(app: FastAPI):\n    # Basics\n    app.include_router(health_router)\n    # Incident module\n    app.include_router(incident_router_v1, prefix=\"/api/v1\")",
         "detail": "app.apis.base_router",
         "documentation": {}
     },
@@ -1111,7 +1632,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    # Database URLs\n    ASYNC_DATABASE_URL: str = \"\"\n    SYNC_DATABASE_URL: str = \"\"\n    # REDIS url\n    REDIS_URL: str = \"\"\n    model_config = SettingsConfigDict(env_file=\".env\", extra=\"ignore\")\nsettings = Settings()",
+        "peekOfCode": "class Settings(BaseSettings):\n    # Database URLs\n    ASYNC_DATABASE_URL: str = \"\"\n    SYNC_DATABASE_URL: str = \"\"\n    # REDIS\n    REDIS_URL: str = \"\"\n    REDIS_HOST: str = \"\"\n    REDIS_PORT: int = 6379\n    REDIS_DB_NUMBER: int = 0\n    model_config = SettingsConfigDict(env_file=\".env\", extra=\"ignore\")",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1120,7 +1641,16 @@
         "kind": 5,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "settings = Settings()",
+        "peekOfCode": "settings = Settings()\n# Redis configuration\nr = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "r = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1129,7 +1659,7 @@
         "kind": 5,
         "importPath": "app.core.db",
         "description": "app.core.db",
-        "peekOfCode": "engine = create_async_engine(settings.ASYNC_DATABASE_URL, echo=True)\nAsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=True, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:",
+        "peekOfCode": "engine = create_async_engine(settings.ASYNC_DATABASE_URL, echo=True)\nAsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=False, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:",
         "detail": "app.core.db",
         "documentation": {}
     },
@@ -1138,7 +1668,7 @@
         "kind": 5,
         "importPath": "app.core.db",
         "description": "app.core.db",
-        "peekOfCode": "AsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=True, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:\n            yield db",
+        "peekOfCode": "AsyncSessioLocal = async_sessionmaker(\n    bind=engine, expire_on_commit=False, autoflush=False\n)\n# Base\nBase = declarative_base()\n# Db factory\nasync def get_async_db():\n    async with AsyncSessioLocal() as db:\n        try:\n            yield db",
         "detail": "app.core.db",
         "documentation": {}
     },
@@ -1156,7 +1686,7 @@
         "kind": 5,
         "importPath": "app.core.db",
         "description": "app.core.db",
-        "peekOfCode": "sync_engine = create_engine(settings.SYNC_DATABASE_URL, echo=True)\nSyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=True\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:",
+        "peekOfCode": "sync_engine = create_engine(settings.SYNC_DATABASE_URL, echo=True)\nSyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=False\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:",
         "detail": "app.core.db",
         "documentation": {}
     },
@@ -1165,7 +1695,7 @@
         "kind": 5,
         "importPath": "app.core.db",
         "description": "app.core.db",
-        "peekOfCode": "SyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=True\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:\n        db.rollback()",
+        "peekOfCode": "SyncSessionLocal = sessionmaker(\n    bind=sync_engine, autoflush=False, autocommit=False, expire_on_commit=False\n)\nasync def get_sync_db():\n    db = SyncSessionLocal()\n    try:\n        yield db\n        db.close()\n    except SQLAlchemyError:\n        db.rollback()",
         "detail": "app.core.db",
         "documentation": {}
     },
@@ -1185,6 +1715,24 @@
         "description": "app.core.logger",
         "peekOfCode": "console = Console(theme=theme, highlight=True, force_terminal=True)",
         "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "app.dependencies.get_user",
+        "description": "app.dependencies.get_user",
+        "peekOfCode": "def get_user():\n    pass",
+        "detail": "app.dependencies.get_user",
+        "documentation": {}
+    },
+    {
+        "label": "get_redis_service",
+        "kind": 2,
+        "importPath": "app.dependencies.service_factories",
+        "description": "app.dependencies.service_factories",
+        "peekOfCode": "def get_redis_service(request: Request) -> aioredis.Redis:\n    return request.app.state.redis",
+        "detail": "app.dependencies.service_factories",
         "documentation": {}
     },
     {
@@ -1287,6 +1835,60 @@
         "documentation": {}
     },
     {
+        "label": "IncidentIdempotancyKeyMissing",
+        "kind": 6,
+        "importPath": "app.modules.exceptions.incident_exceptions",
+        "description": "app.modules.exceptions.incident_exceptions",
+        "peekOfCode": "class IncidentIdempotancyKeyMissing(AppException):\n    def __init__(\n        self,\n        message: str = \"Incident idempotancy key is missing\",\n        status_code: int = 400,\n        details: Any | None = None,\n        error_code: str | None = \"MISSING_KEY\",\n    ) -> None:\n        super().__init__(message, status_code, details, error_code)",
+        "detail": "app.modules.exceptions.incident_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "incident_router",
+        "kind": 5,
+        "importPath": "app.modules.incident.api.v1.incident_api",
+        "description": "app.modules.incident.api.v1.incident_api",
+        "peekOfCode": "incident_router = APIRouter(prefix=\"/sos/incident\", tags=[\"Incident apis\"])\n# CREATE INCIDENT\n@incident_router.post(\"/\", response_model=SuccessResponse[IncidentReadBasic])\nasync def create_incident_endpoint(\n    data: IncidentCreateSchema,\n    key: Annotated[\n        str,\n        Depends(get_idempotancy_key),\n    ],\n    user: Annotated[None, Depends(get_user)],",
+        "detail": "app.modules.incident.api.v1.incident_api",
+        "documentation": {}
+    },
+    {
+        "label": "get_idempotancy_key",
+        "kind": 2,
+        "importPath": "app.modules.incident.dependencies.incident",
+        "description": "app.modules.incident.dependencies.incident",
+        "peekOfCode": "def get_idempotancy_key(request: Request):\n    key = request.headers.get(\"incident_idempotancy_key\")\n    if not key:\n        raise IncidentIdempotancyKeyMissing\n    return key",
+        "detail": "app.modules.incident.dependencies.incident",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_repo",
+        "kind": 2,
+        "importPath": "app.modules.incident.dependencies.repo_factory",
+        "description": "app.modules.incident.dependencies.repo_factory",
+        "peekOfCode": "def get_incident_repo(db: Annotated[AsyncSession, Depends(get_async_db)]):\n    return IncidentRepo(db)",
+        "detail": "app.modules.incident.dependencies.repo_factory",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_service",
+        "kind": 2,
+        "importPath": "app.modules.incident.dependencies.service_factory",
+        "description": "app.modules.incident.dependencies.service_factory",
+        "peekOfCode": "def get_incident_service(\n    incident_repo: Annotated[IncidentRepo, Depends(get_incident_repo)],\n):\n    return IncidentService(incident_repo)\ndef get_incident_idempotancy_service(\n    redis: Annotated[aioredis.Redis, Depends(get_redis_service)],\n):\n    return IncidentIdempotancyService(redis)",
+        "detail": "app.modules.incident.dependencies.service_factory",
+        "documentation": {}
+    },
+    {
+        "label": "get_incident_idempotancy_service",
+        "kind": 2,
+        "importPath": "app.modules.incident.dependencies.service_factory",
+        "description": "app.modules.incident.dependencies.service_factory",
+        "peekOfCode": "def get_incident_idempotancy_service(\n    redis: Annotated[aioredis.Redis, Depends(get_redis_service)],\n):\n    return IncidentIdempotancyService(redis)",
+        "detail": "app.modules.incident.dependencies.service_factory",
+        "documentation": {}
+    },
+    {
         "label": "Priority",
         "kind": 6,
         "importPath": "app.modules.incident.models.incident",
@@ -1300,7 +1902,16 @@
         "kind": 6,
         "importPath": "app.modules.incident.models.incident",
         "description": "app.modules.incident.models.incident",
-        "peekOfCode": "class IncidentCategory(str, Enum):\n    RESCUE = \"rescue\"\n    MEDICAL = \"medical\"\n    SHELTER = \"shelter\"\n    FOOD = \"food\"\n    OTHERS = \"others\"\nclass Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]",
+        "peekOfCode": "class IncidentCategory(str, Enum):\n    RESCUE = \"rescue\"\n    MEDICAL = \"medical\"\n    SHELTER = \"shelter\"\n    FOOD = \"food\"\n    OTHERS = \"others\"\nclass IncidentStatus(str, Enum):\n    PENDING = \"pending\"\n    RESOLVED = \"resolved\"\n    EN_ROUTE = \"enroute\"",
+        "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentStatus",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident",
+        "description": "app.modules.incident.models.incident",
+        "peekOfCode": "class IncidentStatus(str, Enum):\n    PENDING = \"pending\"\n    RESOLVED = \"resolved\"\n    EN_ROUTE = \"enroute\"\n    ARRIVED = \"arrived\"\nclass Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]\n    user_profile_id: Mapped[uuid.UUID | None] = mapped_column(",
         "detail": "app.modules.incident.models.incident",
         "documentation": {}
     },
@@ -1311,6 +1922,15 @@
         "description": "app.modules.incident.models.incident",
         "peekOfCode": "class Incident(BaseUserModel):\n    __tablename__ = \"incidents\"\n    heading: Mapped[str]\n    description: Mapped[str | None]\n    user_profile_id: Mapped[uuid.UUID | None] = mapped_column(\n        ForeignKey(\"profiles.id\"), nullable=True\n    )\n    priority: Mapped[Priority] = mapped_column(default=Priority.MEDIUM)\n    incident_category: Mapped[IncidentCategory] = mapped_column(\n        ENUM(IncidentCategory, name=\"incident_category\")",
         "detail": "app.modules.incident.models.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentRepo",
+        "kind": 6,
+        "importPath": "app.modules.incident.repos.incident_repo",
+        "description": "app.modules.incident.repos.incident_repo",
+        "peekOfCode": "class IncidentRepo:\n    def __init__(self, db: AsyncSession) -> None:\n        self.db = db\n    # repos will come here\n    async def create_incident(self, data: IncidentCreateSchema):\n        to_put_data = data.model_dump(\n            exclude={\"latitude\", \"longitude\"}, exclude_unset=True\n        )\n        to_put_data[\"incident_category\"] = data.details.type\n        to_put_data[\"location\"] = from_shape(data.location, srid=4326)",
+        "detail": "app.modules.incident.repos.incident_repo",
         "documentation": {}
     },
     {
@@ -1327,53 +1947,80 @@
         "kind": 6,
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
-        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: str\n    longitude: str\n    details: Annotated[Details, Field(discriminator=\"type\")]\n# Different category schemas",
+        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    location: Point | None = Field(default=None, exclude=True)",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentReadBasic",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class IncidentReadBasic(BaseModel):\n    id: UUID\n    heading: str\n    description: str\n    priority: Priority\n    location_description: str\n    details: dict",
         "detail": "app.modules.incident.schemas.incident",
         "documentation": {}
     },
     {
         "label": "RescueSchema",
         "kind": 6,
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "peekOfCode": "class RescueSchema(BaseModel):\n    type: Literal[IncidentCategory.RESCUE]\n    no_of_peoples_affected: str\n    no_of_volunteers_required: int = 1\n    life_threat: bool = False\n    @computed_field\n    @property\n    def is_team_required(self) -> bool:\n        return self.no_of_volunteers_required > 5\nclass MedicalSchema(BaseModel):",
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "MedicalSchema",
         "kind": 6,
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "peekOfCode": "class MedicalSchema(BaseModel):\n    type: Literal[IncidentCategory.MEDICAL]\n    ambulance_required: bool = False\n    doctors_required: bool = False\n    life_threat: bool = False\n    blood_required: bool = False\nclass ShelterSchema(BaseModel):\n    type: Literal[IncidentCategory.SHELTER]\n    has_family: bool = False\n    no_of_people: int = 1",
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "ShelterSchema",
         "kind": 6,
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "peekOfCode": "class ShelterSchema(BaseModel):\n    type: Literal[IncidentCategory.SHELTER]\n    has_family: bool = False\n    no_of_people: int = 1\nclass FoodSchema(BaseModel):\n    type: Literal[IncidentCategory.FOOD]\n    no_of_people: int = 1\n    has_elders: bool = False\nclass OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]",
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "FoodSchema",
         "kind": 6,
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "peekOfCode": "class FoodSchema(BaseModel):\n    type: Literal[IncidentCategory.FOOD]\n    no_of_people: int = 1\n    has_elders: bool = False\nclass OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]\n    no_of_people_affected: int = 1\n    life_threat: bool = False",
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
     {
         "label": "OthersSchema",
         "kind": 6,
-        "importPath": "app.modules.incident.schemas.incident",
-        "description": "app.modules.incident.schemas.incident",
+        "importPath": "app.modules.incident.schemas.incident_category_schema",
+        "description": "app.modules.incident.schemas.incident_category_schema",
         "peekOfCode": "class OthersSchema(BaseModel):\n    type: Literal[IncidentCategory.OTHERS]\n    no_of_people_affected: int = 1\n    life_threat: bool = False",
-        "detail": "app.modules.incident.schemas.incident",
+        "detail": "app.modules.incident.schemas.incident_category_schema",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentIdempotancyService",
+        "kind": 6,
+        "importPath": "app.modules.incident.services.incident_idempotancy_service",
+        "description": "app.modules.incident.services.incident_idempotancy_service",
+        "peekOfCode": "class IncidentIdempotancyService:\n    def __init__(\n        self,\n        redis: aioredis.Redis,\n    ) -> None:\n        self.redis = redis\n        self.incident_key_lifetime = 10  # In mins\n    async def check_incident_key(self, key: str):\n        return await self.redis.exists(f\"incident:{key}:created\")\n    async def check_request_key(self, key):",
+        "detail": "app.modules.incident.services.incident_idempotancy_service",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentService",
+        "kind": 6,
+        "importPath": "app.modules.incident.services.incident_service",
+        "description": "app.modules.incident.services.incident_service",
+        "peekOfCode": "class IncidentService:\n    def __init__(self, incident_repo: IncidentRepo) -> None:\n        self.incident_repo = incident_repo\n    # Services will come here\n    async def create_incident_service(self, data: IncidentCreateSchema):\n        return await self.incident_repo.create_incident(data)",
+        "detail": "app.modules.incident.services.incident_service",
         "documentation": {}
     },
     {
@@ -1408,7 +2055,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI(title=\"sahayog\")\ninclude_base_router(app)\nexception_handler_caller(app)\napp.add_middleware(LoggingMiddleware)",
+        "peekOfCode": "app = FastAPI(title=\"sahayog\", lifespan=lifespan)\ninclude_base_router(app)\nexception_handler_caller(app)\napp.add_middleware(LoggingMiddleware)",
         "detail": "app.main",
         "documentation": {}
     }

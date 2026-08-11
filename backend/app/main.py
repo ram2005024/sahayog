@@ -1,10 +1,23 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 
+from app import models  # Noqa
 from app.apis.base_router import include_base_router
+from app.core.startup import startup_redis
 from app.exceptions.exception_handler import exception_handler_caller
 from app.middlewares.logger_middleware import LoggingMiddleware
 
-app = FastAPI(title="sahayog")
+
+# LIFE SPAN
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    async with startup_redis(app):
+        yield
+
+
+app = FastAPI(title="sahayog", lifespan=lifespan)
+
 
 include_base_router(app)
 exception_handler_caller(app)

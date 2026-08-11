@@ -9,7 +9,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.models.base_user_model import BaseUserModel
 
 if TYPE_CHECKING:
-    from app.models import Incident
+    from app.modules.incident.models.incident import Incident
 
 
 class ProfileAudit(BaseUserModel):
