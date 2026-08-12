@@ -11,7 +11,7 @@ class IncidentSignatureRequest(BaseModel):
     )
     file_types: list[Literal["image", "audio"]] = Field(..., min_length=0, max_length=4)
 
-    @field_validator("field_types")
+    @field_validator("file_types")
     @classmethod
     def normalize_file_types(cls, value):
         has_more_images = value.count("image") > 3

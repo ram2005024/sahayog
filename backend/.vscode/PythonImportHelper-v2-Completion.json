@@ -84,6 +84,22 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
@@ -165,6 +181,38 @@
         "documentation": {}
     },
     {
+        "label": "ARRAY",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "TEXT",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -213,11 +261,35 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
         "isExtraImport": true,
         "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -502,6 +574,14 @@
         "documentation": {}
     },
     {
+        "label": "media_api",
+        "importPath": "app.apis.media_router",
+        "description": "app.apis.media_router",
+        "isExtraImport": true,
+        "detail": "app.apis.media_router",
+        "documentation": {}
+    },
+    {
         "label": "incident_router",
         "importPath": "app.modules.incident.api.v1.incident_api",
         "description": "app.modules.incident.api.v1.incident_api",
@@ -592,6 +672,14 @@
     },
     {
         "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -801,6 +889,30 @@
     },
     {
         "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -1131,11 +1243,11 @@
         "documentation": {}
     },
     {
-        "label": "BaseUserModel",
-        "importPath": "app.models.base_user_model",
-        "description": "app.models.base_user_model",
+        "label": "ENUM",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
-        "detail": "app.models.base_user_model",
+        "detail": "sqlalchemy.dialects.postgresql",
         "documentation": {}
     },
     {
@@ -1160,6 +1272,38 @@
         "description": "app.models.base_user_model",
         "isExtraImport": true,
         "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserModel",
+        "importPath": "app.models.base_user_model",
+        "description": "app.models.base_user_model",
+        "isExtraImport": true,
+        "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentMedia",
+        "importPath": "app.modules.incident.models.incident_media",
+        "description": "app.modules.incident.models.incident_media",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident_media",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1634,6 +1778,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "description": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"incident_medias\",\n        sa.Column(\"incident_id\", sa.UUID(), nullable=False),\n        sa.Column(\"image_urls\", sa.ARRAY(sa.TEXT()), nullable=True),\n        sa.Column(\"audio_url\", sa.String(), nullable=True),\n        sa.Column(\n            \"types\",",
+        "detail": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "description": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),\n        sa.Column(\n            \"auth_name\", sa.VARCHAR(length=256), autoincrement=False, nullable=True\n        ),\n        sa.Column(\"auth_srid\", sa.INTEGER(), autoincrement=False, nullable=True),",
+        "detail": "alembic.versions.1d322e5b53af_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
         "description": "alembic.versions.1fc868403f9a_added_incident_status_field_in_incident_",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # Create enum type first\n    incident_status_enum = postgresql.ENUM(\n        \"PENDING\",\n        \"RESOLVED\",\n        \"EN_ROUTE\",\n        \"ARRIVED\",\n        name=\"incident_status\",\n        create_type=True,",
@@ -1683,6 +1845,24 @@
         "description": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    op.drop_index(\"idx_incidents_location\", table_name=\"incidents\")\n    op.drop_table(\"incidents\")\n    op.drop_index(\"idx_profile_audits_location\", table_name=\"profile_audits\")\n    op.drop_table(\"profile_audits\")",
         "detail": "alembic.versions.777f272e6de6_incident_and_profile_audit_table_created",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.7ae2187350f4_added_incident_medias_model",
+        "description": "alembic.versions.7ae2187350f4_added_incident_medias_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(\n        op.f(\"incident_medias_incident_id_fkey\"), \"incident_medias\", type_=\"foreignkey\"\n    )\n    op.create_foreign_key(\n        None,\n        \"incident_medias\",\n        \"incidents\",",
+        "detail": "alembic.versions.7ae2187350f4_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.7ae2187350f4_added_incident_medias_model",
+        "description": "alembic.versions.7ae2187350f4_added_incident_medias_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, \"incident_medias\", type_=\"foreignkey\")\n    op.create_foreign_key(\n        op.f(\"incident_medias_incident_id_fkey\"),\n        \"incident_medias\",\n        \"incidents\",\n        [\"incident_id\"],\n        [\"id\"],",
+        "detail": "alembic.versions.7ae2187350f4_added_incident_medias_model",
         "documentation": {}
     },
     {
@@ -1744,7 +1924,7 @@
         "kind": 2,
         "importPath": "app.apis.base_router",
         "description": "app.apis.base_router",
-        "peekOfCode": "def include_base_router(app: FastAPI):\n    # Basics\n    app.include_router(health_router)\n    # Incident module\n    app.include_router(incident_router_v1, prefix=\"/api/v1\")",
+        "peekOfCode": "def include_base_router(app: FastAPI):\n    # Basics\n    app.include_router(health_router)\n    # Incident module\n    app.include_router(incident_router_v1, prefix=\"/api/v1\")\n    app.include_router(media_api_v1)",
         "detail": "app.apis.base_router",
         "documentation": {}
     },
@@ -1771,7 +1951,7 @@
         "kind": 5,
         "importPath": "app.apis.media_router",
         "description": "app.apis.media_router",
-        "peekOfCode": "media_api = APIRouter(prefix=\"/incident/media\")\n@media_api.post(\"/signatures\")\ndef get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
+        "peekOfCode": "media_api = APIRouter(prefix=\"/ap1/v1/incident/media\")\n@media_api.post(\"/signatures\")\ndef get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
         "detail": "app.apis.media_router",
         "documentation": {}
     },
@@ -1879,7 +2059,7 @@
         "kind": 2,
         "importPath": "app.dependencies.get_user",
         "description": "app.dependencies.get_user",
-        "peekOfCode": "def get_user():\n    \"user123\"",
+        "peekOfCode": "def get_user():\n    return \"user123\"",
         "detail": "app.dependencies.get_user",
         "documentation": {}
     },
@@ -2082,6 +2262,24 @@
         "documentation": {}
     },
     {
+        "label": "MediaTypes",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident_media",
+        "description": "app.modules.incident.models.incident_media",
+        "peekOfCode": "class MediaTypes(str, Enum):\n    IMAGE = \"image\"\n    AUDIO = \"audio\"\nclass IncidentMedia(BaseUserModel):\n    __tablename__ = \"incident_medias\"\n    incident_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"incidents.id\", ondelete=\"CASCADE\"), index=True\n    )\n    image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)\n    audio_url: Mapped[str | None]",
+        "detail": "app.modules.incident.models.incident_media",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentMedia",
+        "kind": 6,
+        "importPath": "app.modules.incident.models.incident_media",
+        "description": "app.modules.incident.models.incident_media",
+        "peekOfCode": "class IncidentMedia(BaseUserModel):\n    __tablename__ = \"incident_medias\"\n    incident_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"incidents.id\", ondelete=\"CASCADE\"), index=True\n    )\n    image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)\n    audio_url: Mapped[str | None]\n    types: Mapped[list[MediaTypes]] = mapped_column(\n        ARRAY(ENUM(MediaTypes, name=\"media_types_incident\"))\n    )",
+        "detail": "app.modules.incident.models.incident_media",
+        "documentation": {}
+    },
+    {
         "label": "IncidentRepo",
         "kind": 6,
         "importPath": "app.modules.incident.repos.incident_repo",
@@ -2212,7 +2410,7 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class IncidentSignatureRequest(BaseModel):\n    file_length: int = Field(\n        ...,\n        ge=0,\n        le=3,\n    )\n    file_types: list[Literal[\"image\", \"audio\"]] = Field(..., min_length=0, max_length=4)\n    @field_validator(\"field_types\")\n    @classmethod\n    def normalize_file_types(cls, value):",
+        "peekOfCode": "class IncidentSignatureRequest(BaseModel):\n    file_length: int = Field(\n        ...,\n        ge=0,\n        le=3,\n    )\n    file_types: list[Literal[\"image\", \"audio\"]] = Field(..., min_length=0, max_length=4)\n    @field_validator(\"file_types\")\n    @classmethod\n    def normalize_file_types(cls, value):",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },

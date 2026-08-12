@@ -6,7 +6,7 @@ from app.dependencies.get_user import get_user
 from app.schemas.media_schema import IncidentSignatureRequest
 from app.services.cloudinary_service import CloudinaryService
 
-media_api = APIRouter(prefix="/incident/media")
+media_api = APIRouter(prefix="/ap1/v1/incident/media")
 
 
 @media_api.post("/signatures")

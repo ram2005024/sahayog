@@ -7,6 +7,7 @@ from geoalchemy2 import Geography
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base_user_model import BaseUserModel
+from app.modules.incident.models.incident_media import IncidentMedia
 
 if TYPE_CHECKING:
     from app.modules.incident.models.incident import Incident
@@ -26,5 +27,8 @@ class ProfileAudit(BaseUserModel):
     first_name: Mapped[str]
     last_name: Mapped[str | None]
     incidents: Mapped[list["Incident"] | None] = relationship(
-        "Incident", cascade="all", back_populates="profile_audit"
+        "Incident", back_populates="profile_audit"
+    )
+    incident_images: Mapped["IncidentMedia|None"] = relationship(
+        "IncidentMedia", back_populates="profile_audit"
     )

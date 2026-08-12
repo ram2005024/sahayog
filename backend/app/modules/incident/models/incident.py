@@ -12,6 +12,7 @@ from app.models.base_user_model import BaseUserModel
 if TYPE_CHECKING:
     from app.modules.auth.models.profiles.citizen_profile import Profile
     from app.modules.auth.models.profiles.profile_audit import ProfileAudit
+    from app.modules.incident.models.incident_media import IncidentMedia
 
 
 class Priority(str, Enum):
@@ -56,9 +57,17 @@ class Incident(BaseUserModel):
     profile_audit_id: Mapped[uuid.UUID | None] = mapped_column(
         ForeignKey("profile_audits.id", ondelete="SET NULL"), nullable=True
     )
+
+    # SQL ALCHEMY FIELDS
     reported_by: Mapped["Profile|None"] = relationship(
         "Profile", back_populates="registered_incidents"
     )
     profile_audit: Mapped["ProfileAudit|None"] = relationship(
         "ProfileAudit", back_populates="incidents"
     )  # Exists when the user is even deleted
+    incident_medias: Mapped["IncidentMedia"] = relationship(
+        "incident_medias.id",
+        back_populates="incident",
+        uselist=False,
+        cascade="all,delete-orphan",
+    )
