@@ -1929,7 +1929,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.repos.incident_repo",
         "description": "app.modules.incident.repos.incident_repo",
-        "peekOfCode": "class IncidentRepo:\n    def __init__(self, db: AsyncSession) -> None:\n        self.db = db\n    # repos will come here\n    async def create_incident(self, data: IncidentCreateSchema):\n        to_put_data = data.model_dump(\n            exclude={\"latitude\", \"longitude\"}, exclude_unset=True\n        )\n        to_put_data[\"incident_category\"] = data.details.type\n        to_put_data[\"location\"] = from_shape(data.location, srid=4326)",
+        "peekOfCode": "class IncidentRepo:\n    def __init__(self, db: AsyncSession) -> None:\n        self.db = db\n    # incident repos will come here\n    async def create_incident(self, data: IncidentCreateSchema):\n        to_put_data = data.model_dump(\n            exclude={\"latitude\", \"longitude\"}, exclude_unset=True\n        )\n        to_put_data[\"incident_category\"] = data.details.type\n        to_put_data[\"location\"] = from_shape(data.location, srid=4326)",
         "detail": "app.modules.incident.repos.incident_repo",
         "documentation": {}
     },

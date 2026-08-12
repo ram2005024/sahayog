@@ -10,7 +10,7 @@ class IncidentRepo:
     def __init__(self, db: AsyncSession) -> None:
         self.db = db
 
-    # repos will come here
+    # incident repos will come here
     async def create_incident(self, data: IncidentCreateSchema):
         to_put_data = data.model_dump(
             exclude={"latitude", "longitude"}, exclude_unset=True
