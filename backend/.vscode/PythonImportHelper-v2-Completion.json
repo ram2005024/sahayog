@@ -334,6 +334,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.core.db",
         "description": "app.core.db",
@@ -500,6 +508,15 @@
         "description": "redis",
         "isExtraImport": true,
         "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "cloudinary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cloudinary",
+        "description": "cloudinary",
+        "detail": "cloudinary",
         "documentation": {}
     },
     {
@@ -841,6 +858,14 @@
     },
     {
         "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1355,6 +1380,30 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "Point",
         "importPath": "shapely.geometry",
         "description": "shapely.geometry",
@@ -1368,6 +1417,39 @@
         "description": "app.modules.incident.schemas.annotation",
         "isExtraImport": true,
         "detail": "app.modules.incident.schemas.annotation",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentSignatureRequest",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SignatureResponse",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SingleSignatureResponse",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
         "documentation": {}
     },
     {
@@ -1632,7 +1714,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    # Database URLs\n    ASYNC_DATABASE_URL: str = \"\"\n    SYNC_DATABASE_URL: str = \"\"\n    # REDIS\n    REDIS_URL: str = \"\"\n    REDIS_HOST: str = \"\"\n    REDIS_PORT: int = 6379\n    REDIS_DB_NUMBER: int = 0\n    model_config = SettingsConfigDict(env_file=\".env\", extra=\"ignore\")",
+        "peekOfCode": "class Settings(BaseSettings):\n    # Database URLs\n    ASYNC_DATABASE_URL: str = \"\"\n    SYNC_DATABASE_URL: str = \"\"\n    # REDIS\n    REDIS_URL: str = \"\"\n    REDIS_HOST: str = \"\"\n    REDIS_PORT: int = 6379\n    REDIS_DB_NUMBER: int = 0\n    # Cloudinary",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1641,7 +1723,7 @@
         "kind": 5,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "settings = Settings()\n# Redis configuration\nr = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)",
+        "peekOfCode": "settings = Settings()\n# Redis configuration\nr = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)\n# Cloudinary configuration\ncloudinary = cloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1650,7 +1732,16 @@
         "kind": 5,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "r = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)",
+        "peekOfCode": "r = redis.Redis(\n    host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB_NUMBER\n)\n# Cloudinary configuration\ncloudinary = cloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,\n)",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "cloudinary",
+        "kind": 5,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "cloudinary = cloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,\n)",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -2048,6 +2139,42 @@
         "description": "app.schemas.common",
         "peekOfCode": "T = TypeVar(\"T\")\nclass SuccessResponse(BaseModel, Generic[T]):  # noqa: UP046\n    success: bool = True\n    message: str | None = None\n    data: T | None = None\nclass ErrorResponse(BaseModel):\n    success: bool = False\n    message: str\n    details: Any | None = None\n    error_code: str | None = None",
         "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentSignatureRequest",
+        "kind": 6,
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "peekOfCode": "class IncidentSignatureRequest(BaseModel):\n    file_length: int = Field(\n        ...,\n        ge=0,\n        le=3,\n    )\n    file_types: list[Literal[\"image\", \"audio\"]] = Field(..., min_length=0, max_length=4)\n    @field_validator(\"field_types\")\n    @classmethod\n    def normalize_file_types(cls, value):",
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SingleSignatureResponse",
+        "kind": 6,
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "peekOfCode": "class SingleSignatureResponse(BaseModel):\n    signature: str\n    url: str\n    timestamp: int\n    public_id: str\n    api_key: str\n    cloud_name: str\nclass SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60",
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SignatureResponse",
+        "kind": 6,
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "peekOfCode": "class SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60",
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "CloudinaryService",
+        "kind": 6,
+        "importPath": "app.services.cloudinary_service",
+        "description": "app.services.cloudinary_service",
+        "peekOfCode": "class CloudinaryService:\n    def __init__(self, cloudinary) -> None:\n        self.cloudinary = cloudinary\n    # Services will come here\n    def select_incident_media_preset(self, value):\n        return \"incident_image_preset\" if value == \"image\" else \"incident_audio_preset\"\n    def generate_signatures_for_incident_medias(\n        self, user_id: str, data: IncidentSignatureRequest\n    ):\n        signatures = []",
+        "detail": "app.services.cloudinary_service",
         "documentation": {}
     },
     {

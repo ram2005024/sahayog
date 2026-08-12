@@ -9,6 +9,7 @@ dependencies = [
     "alembic>=1.19.1",
     "asyncpg>=0.31.0",
     "authlib>=1.7.2",
+    "cloudinary>=1.45.0",
     "fastapi[standard]>=0.141.1",
     "geoalchemy2>=0.20.0",
     "psycopg2-binary>=2.9.12",
