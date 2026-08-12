@@ -11,8 +11,8 @@ from app.schemas.media_schema import (
 
 
 class CloudinaryService:
-    def __init__(self, cloudinary) -> None:
-        self.cloudinary = cloudinary
+    def __init__(self) -> None:
+        pass
 
     # Services will come here
 
@@ -31,12 +31,12 @@ class CloudinaryService:
             cloud_name = settings.CLOUD_NAME
             params = "&".join(
                 [
-                    f"public_id:{public_id}",
-                    f"preset:{media_preset}",
-                    f"timestamp:{timestamp}",
+                    f"public_id={public_id}",
+                    f"preset={media_preset}",
+                    f"timestamp={timestamp}",
                 ]
             )
-            raw = params + settings.CLOUD_KEY
+            raw = params + settings.CLOUD_SECRET
             signature = hashlib.sha256(raw.encode("utf-8")).hexdigest()
             url = f"https://api.cloudinary.com/v1_1/{cloud_name}/auto/upload"
             signatures.append(

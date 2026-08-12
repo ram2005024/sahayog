@@ -390,6 +390,22 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -508,6 +524,190 @@
         "description": "redis",
         "isExtraImport": true,
         "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "app.dependencies.get_user",
+        "description": "app.dependencies.get_user",
+        "isExtraImport": true,
+        "detail": "app.dependencies.get_user",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "app.dependencies.get_user",
+        "description": "app.dependencies.get_user",
+        "isExtraImport": true,
+        "detail": "app.dependencies.get_user",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentSignatureRequest",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentSignatureRequest",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SignatureResponse",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SingleSignatureResponse",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "CloudinaryService",
+        "importPath": "app.services.cloudinary_service",
+        "description": "app.services.cloudinary_service",
+        "isExtraImport": true,
+        "detail": "app.services.cloudinary_service",
         "documentation": {}
     },
     {
@@ -753,126 +953,6 @@
         "documentation": {}
     },
     {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Annotated",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Annotated",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Annotated",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Annotated",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Literal",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Generic",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TypeVar",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Literal",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "HTTPException",
         "importPath": "fastapi.exceptions",
         "description": "fastapi.exceptions",
@@ -1105,14 +1185,6 @@
         "importPath": "asyncio",
         "description": "asyncio",
         "detail": "asyncio",
-        "documentation": {}
-    },
-    {
-        "label": "get_user",
-        "importPath": "app.dependencies.get_user",
-        "description": "app.dependencies.get_user",
-        "isExtraImport": true,
-        "detail": "app.dependencies.get_user",
         "documentation": {}
     },
     {
@@ -1429,30 +1501,6 @@
         "documentation": {}
     },
     {
-        "label": "IncidentSignatureRequest",
-        "importPath": "app.schemas.media_schema",
-        "description": "app.schemas.media_schema",
-        "isExtraImport": true,
-        "detail": "app.schemas.media_schema",
-        "documentation": {}
-    },
-    {
-        "label": "SignatureResponse",
-        "importPath": "app.schemas.media_schema",
-        "description": "app.schemas.media_schema",
-        "isExtraImport": true,
-        "detail": "app.schemas.media_schema",
-        "documentation": {}
-    },
-    {
-        "label": "SingleSignatureResponse",
-        "importPath": "app.schemas.media_schema",
-        "description": "app.schemas.media_schema",
-        "isExtraImport": true,
-        "detail": "app.schemas.media_schema",
-        "documentation": {}
-    },
-    {
         "label": "include_base_router",
         "importPath": "app.apis.base_router",
         "description": "app.apis.base_router",
@@ -1710,6 +1758,24 @@
         "documentation": {}
     },
     {
+        "label": "get_media_signatures",
+        "kind": 2,
+        "importPath": "app.apis.media_router",
+        "description": "app.apis.media_router",
+        "peekOfCode": "def get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
+        "detail": "app.apis.media_router",
+        "documentation": {}
+    },
+    {
+        "label": "media_api",
+        "kind": 5,
+        "importPath": "app.apis.media_router",
+        "description": "app.apis.media_router",
+        "peekOfCode": "media_api = APIRouter(prefix=\"/incident/media\")\n@media_api.post(\"/signatures\")\ndef get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
+        "detail": "app.apis.media_router",
+        "documentation": {}
+    },
+    {
         "label": "Settings",
         "kind": 6,
         "importPath": "app.core.config",
@@ -1813,7 +1879,7 @@
         "kind": 2,
         "importPath": "app.dependencies.get_user",
         "description": "app.dependencies.get_user",
-        "peekOfCode": "def get_user():\n    pass",
+        "peekOfCode": "def get_user():\n    \"user123\"",
         "detail": "app.dependencies.get_user",
         "documentation": {}
     },
@@ -1939,7 +2005,7 @@
         "kind": 5,
         "importPath": "app.modules.incident.api.v1.incident_api",
         "description": "app.modules.incident.api.v1.incident_api",
-        "peekOfCode": "incident_router = APIRouter(prefix=\"/sos/incident\", tags=[\"Incident apis\"])\n# CREATE INCIDENT\n@incident_router.post(\"/\", response_model=SuccessResponse[IncidentReadBasic])\nasync def create_incident_endpoint(\n    data: IncidentCreateSchema,\n    key: Annotated[\n        str,\n        Depends(get_idempotancy_key),\n    ],\n    user: Annotated[None, Depends(get_user)],",
+        "peekOfCode": "incident_router = APIRouter(prefix=\"/sos/incident\", tags=[\"Incident apis\"])\n# CREATE INCIDENT\n@incident_router.post(\"/\", response_model=SuccessResponse[IncidentReadBasic])\nasync def create_incident_endpoint(\n    data: IncidentCreateSchema,\n    key: Annotated[\n        str,\n        Depends(get_idempotancy_key),\n    ],\n    user: Annotated[str, Depends(get_user)],",
         "detail": "app.modules.incident.api.v1.incident_api",
         "documentation": {}
     },
@@ -2173,7 +2239,7 @@
         "kind": 6,
         "importPath": "app.services.cloudinary_service",
         "description": "app.services.cloudinary_service",
-        "peekOfCode": "class CloudinaryService:\n    def __init__(self, cloudinary) -> None:\n        self.cloudinary = cloudinary\n    # Services will come here\n    def select_incident_media_preset(self, value):\n        return \"incident_image_preset\" if value == \"image\" else \"incident_audio_preset\"\n    def generate_signatures_for_incident_medias(\n        self, user_id: str, data: IncidentSignatureRequest\n    ):\n        signatures = []",
+        "peekOfCode": "class CloudinaryService:\n    def __init__(self) -> None:\n        pass\n    # Services will come here\n    def select_incident_media_preset(self, value):\n        return \"incident_image_preset\" if value == \"image\" else \"incident_audio_preset\"\n    def generate_signatures_for_incident_medias(\n        self, user_id: str, data: IncidentSignatureRequest\n    ):\n        signatures = []",
         "detail": "app.services.cloudinary_service",
         "documentation": {}
     },

@@ -30,7 +30,7 @@ async def create_incident_endpoint(
         str,
         Depends(get_idempotancy_key),
     ],
-    user: Annotated[None, Depends(get_user)],
+    user: Annotated[str, Depends(get_user)],
     incident_service: Annotated[IncidentService, Depends(get_incident_service)],
     idempotancy_service: Annotated[
         IncidentIdempotancyService, Depends(get_incident_idempotancy_service)
