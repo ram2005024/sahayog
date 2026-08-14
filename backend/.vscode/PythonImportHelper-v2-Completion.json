@@ -1476,6 +1476,14 @@
         "documentation": {}
     },
     {
+        "label": "Point",
+        "importPath": "shapely.geometry",
+        "description": "shapely.geometry",
+        "isExtraImport": true,
+        "detail": "shapely.geometry",
+        "documentation": {}
+    },
+    {
         "label": "Incident",
         "importPath": "app.modules.incident.models.incident",
         "description": "app.modules.incident.models.incident",
@@ -1564,14 +1572,6 @@
         "documentation": {}
     },
     {
-        "label": "model_validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -1617,14 +1617,6 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Point",
-        "importPath": "shapely.geometry",
-        "description": "shapely.geometry",
-        "isExtraImport": true,
-        "detail": "shapely.geometry",
         "documentation": {}
     },
     {
@@ -2284,7 +2276,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.repos.incident_repo",
         "description": "app.modules.incident.repos.incident_repo",
-        "peekOfCode": "class IncidentRepo:\n    def __init__(self, db: AsyncSession) -> None:\n        self.db = db\n    # incident repos will come here\n    async def create_incident(self, data: IncidentCreateSchema):\n        to_put_data = data.model_dump(\n            exclude={\"latitude\", \"longitude\"}, exclude_unset=True\n        )\n        to_put_data[\"incident_category\"] = data.details.type\n        to_put_data[\"location\"] = from_shape(data.location, srid=4326)",
+        "peekOfCode": "class IncidentRepo:\n    def __init__(self, db: AsyncSession) -> None:\n        self.db = db\n    # incident repos will come here\n    async def create_incident(self, data: IncidentCreateSchema):\n        location = Point(data.longitude, data.latitude)\n        to_put_data = data.model_dump(\n            exclude={\"latitude\", \"longitude\"}, exclude_unset=True\n        )\n        to_put_data[\"location\"] = from_shape(location, srid=4326)",
         "detail": "app.modules.incident.repos.incident_repo",
         "documentation": {}
     },
@@ -2302,7 +2294,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
-        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    location: Point | None = Field(default=None, exclude=True)",
+        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    @field_validator(\"latitude\", \"longitude\", mode=\"before\")",
         "detail": "app.modules.incident.schemas.incident",
         "documentation": {}
     },

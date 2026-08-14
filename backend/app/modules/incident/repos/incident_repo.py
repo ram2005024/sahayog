@@ -1,4 +1,5 @@
 from geoalchemy2.shape import from_shape
+from shapely.geometry import Point
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -12,11 +13,13 @@ class IncidentRepo:
 
     # incident repos will come here
     async def create_incident(self, data: IncidentCreateSchema):
+        location = Point(data.longitude, data.latitude)
         to_put_data = data.model_dump(
             exclude={"latitude", "longitude"}, exclude_unset=True
         )
+        to_put_data["location"] = from_shape(location, srid=4326)
         to_put_data["incident_category"] = data.details.type
-        to_put_data["location"] = from_shape(data.location, srid=4326)
+
         new_data = Incident()
         for key, value in to_put_data.items():
             setattr(new_data, key, value)
