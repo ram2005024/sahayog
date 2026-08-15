@@ -100,6 +100,22 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
@@ -277,11 +293,35 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
         "isExtraImport": true,
         "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -759,7 +799,55 @@
         "documentation": {}
     },
     {
+        "label": "SuccessResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessResponse",
+        "importPath": "app.schemas.common",
+        "description": "app.schemas.common",
+        "isExtraImport": true,
+        "detail": "app.schemas.common",
+        "documentation": {}
+    },
+    {
         "label": "IncidentSignatureRequest",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "SignatureResponse",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentMediaSchema",
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
         "isExtraImport": true,
@@ -1153,22 +1241,6 @@
         "documentation": {}
     },
     {
-        "label": "ErrorResponse",
-        "importPath": "app.schemas.common",
-        "description": "app.schemas.common",
-        "isExtraImport": true,
-        "detail": "app.schemas.common",
-        "documentation": {}
-    },
-    {
-        "label": "SuccessResponse",
-        "importPath": "app.schemas.common",
-        "description": "app.schemas.common",
-        "isExtraImport": true,
-        "detail": "app.schemas.common",
-        "documentation": {}
-    },
-    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -1288,6 +1360,14 @@
         "description": "app.models.base_user_model",
         "isExtraImport": true,
         "detail": "app.models.base_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentMedia",
+        "importPath": "app.modules.incident.models.incident_media",
+        "description": "app.modules.incident.models.incident_media",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident_media",
         "documentation": {}
     },
     {
@@ -1637,6 +1717,14 @@
         "documentation": {}
     },
     {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
         "label": "include_base_router",
         "importPath": "app.apis.base_router",
         "description": "app.apis.base_router",
@@ -1806,6 +1894,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "description": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),",
+        "detail": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "description": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"spatial_ref_sys\",\n        sa.Column(\"srid\", sa.INTEGER(), autoincrement=False, nullable=False),\n        sa.Column(\n            \"auth_name\", sa.VARCHAR(length=256), autoincrement=False, nullable=True\n        ),\n        sa.Column(\"auth_srid\", sa.INTEGER(), autoincrement=False, nullable=True),",
+        "detail": "alembic.versions.291cf01f6829_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
         "description": "alembic.versions.65c7229f930b_user_and_citizen_profile_created",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    op.create_table(\n        \"users\",\n        sa.Column(\n            \"role\",\n            sa.ARRAY(\n                postgresql.ENUM(\n                    \"CITIZEN\", \"VOLUNTEER\", \"COORDINATOR\", \"ADMIN\", name=\"user_roles\"\n                )",
@@ -1876,6 +1982,24 @@
         "documentation": {}
     },
     {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "description": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column(\n        \"incident_medias\",\n        sa.Column(\n            \"type\",\n            sa.ARRAY(postgresql.ENUM(\"IMAGE\", \"AUDIO\", name=\"media_types_incident\")),\n            nullable=False,\n        ),",
+        "detail": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "description": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column(\n        \"incident_medias\",\n        sa.Column(\n            \"types\",\n            postgresql.ARRAY(\n                postgresql.ENUM(\"IMAGE\", \"AUDIO\", name=\"media_types_incident\")\n            ),",
+        "detail": "alembic.versions.fa6b552951c4_added_incident_medias_model",
+        "documentation": {}
+    },
+    {
         "label": "run_migrations_offline",
         "kind": 2,
         "importPath": "alembic.env",
@@ -1943,7 +2067,7 @@
         "kind": 5,
         "importPath": "app.apis.media_router",
         "description": "app.apis.media_router",
-        "peekOfCode": "media_api = APIRouter(prefix=\"/ap1/v1/incident/media\")\n@media_api.post(\"/signatures\")\ndef get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
+        "peekOfCode": "media_api = APIRouter(prefix=\"/ap1/v1/incident/media\")\n@media_api.post(\"/signatures\", response_model=SuccessResponse[SignatureResponse])\ndef get_media_signatures(\n    data: IncidentSignatureRequest,\n    user_id: Annotated[str, Depends(get_user)],  # User id is demo\n    media_service: Annotated[CloudinaryService, Depends(CloudinaryService)],\n):\n    return media_service.generate_signatures_for_incident_medias(user_id, data)",
         "detail": "app.apis.media_router",
         "documentation": {}
     },
@@ -2267,7 +2391,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.models.incident_media",
         "description": "app.modules.incident.models.incident_media",
-        "peekOfCode": "class IncidentMedia(BaseUserModel):\n    __tablename__ = \"incident_medias\"\n    incident_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"incidents.id\", ondelete=\"CASCADE\"), index=True\n    )\n    image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)\n    audio_url: Mapped[str | None]\n    types: Mapped[list[MediaTypes]] = mapped_column(\n        ARRAY(ENUM(MediaTypes, name=\"media_types_incident\"))\n    )",
+        "peekOfCode": "class IncidentMedia(BaseUserModel):\n    __tablename__ = \"incident_medias\"\n    incident_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"incidents.id\", ondelete=\"CASCADE\"), index=True\n    )\n    image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)\n    audio_url: Mapped[str | None]\n    type: Mapped[MediaTypes] = mapped_column(\n        ARRAY(ENUM(MediaTypes, name=\"media_types_incident\"))\n    )",
         "detail": "app.modules.incident.models.incident_media",
         "documentation": {}
     },
@@ -2294,7 +2418,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
-        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    @field_validator(\"latitude\", \"longitude\", mode=\"before\")",
+        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    medias: list[IncidentMediaSchema] | None = None",
         "detail": "app.modules.incident.schemas.incident",
         "documentation": {}
     },
@@ -2312,7 +2436,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.schemas.incident_category_schema",
         "description": "app.modules.incident.schemas.incident_category_schema",
-        "peekOfCode": "class RescueSchema(BaseModel):\n    type: Literal[IncidentCategory.RESCUE]\n    no_of_peoples_affected: str\n    no_of_volunteers_required: int = 1\n    life_threat: bool = False\n    @computed_field\n    @property\n    def is_team_required(self) -> bool:\n        return self.no_of_volunteers_required > 5\nclass MedicalSchema(BaseModel):",
+        "peekOfCode": "class RescueSchema(BaseModel):\n    type: Literal[IncidentCategory.RESCUE]\n    no_of_peoples_affected: int\n    no_of_volunteers_required: int = 1\n    life_threat: bool = False\n    @computed_field\n    @property\n    def is_team_required(self) -> bool:\n        return self.no_of_volunteers_required > 5\nclass MedicalSchema(BaseModel):",
         "detail": "app.modules.incident.schemas.incident_category_schema",
         "documentation": {}
     },
@@ -2402,7 +2526,7 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class IncidentSignatureRequest(BaseModel):\n    file_length: int = Field(\n        ...,\n        ge=0,\n        le=3,\n    )\n    file_types: list[Literal[\"image\", \"audio\"]] = Field(..., min_length=0, max_length=4)\n    @field_validator(\"file_types\")\n    @classmethod\n    def normalize_file_types(cls, value):",
+        "peekOfCode": "class IncidentSignatureRequest(BaseModel):\n    file_length: int = Field(\n        ...,\n        ge=0,\n        le=4,\n    )\n    file_types: list[Literal[\"image\", \"audio\"]] = Field(..., min_length=0, max_length=4)\n    @field_validator(\"file_types\")\n    @classmethod\n    def normalize_file_types(cls, value):",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },
@@ -2411,7 +2535,7 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class SingleSignatureResponse(BaseModel):\n    signature: str\n    url: str\n    timestamp: int\n    public_id: str\n    api_key: str\n    cloud_name: str\nclass SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60",
+        "peekOfCode": "class SingleSignatureResponse(BaseModel):\n    signature: str\n    url: str\n    timestamp: int\n    public_id: str\n    api_key: str\n    upload_preset: str\nclass SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },
@@ -2420,7 +2544,25 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60",
+        "peekOfCode": "class SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60\nclass MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: str\n    preset: str\nclass IncidentMediaSchema(BaseModel):",
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "MediaMetaData",
+        "kind": 6,
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "peekOfCode": "class MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: str\n    preset: str\nclass IncidentMediaSchema(BaseModel):\n    type: Literal[\"image\", \"audio\"]\n    url: str\n    meta_data: MediaMetaData",
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentMediaSchema",
+        "kind": 6,
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "peekOfCode": "class IncidentMediaSchema(BaseModel):\n    type: Literal[\"image\", \"audio\"]\n    url: str\n    meta_data: MediaMetaData",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },
@@ -2429,7 +2571,7 @@
         "kind": 6,
         "importPath": "app.services.cloudinary_service",
         "description": "app.services.cloudinary_service",
-        "peekOfCode": "class CloudinaryService:\n    def __init__(self) -> None:\n        pass\n    # Services will come here\n    def select_incident_media_preset(self, value):\n        return \"incident_image_preset\" if value == \"image\" else \"incident_audio_preset\"\n    def generate_signatures_for_incident_medias(\n        self, user_id: str, data: IncidentSignatureRequest\n    ):\n        signatures = []",
+        "peekOfCode": "class CloudinaryService:\n    def __init__(self) -> None:\n        pass\n    # Services will come here\n    def select_incident_media_preset(self, value):\n        return \"incident_image\" if value == \"image\" else \"incident_audio\"\n    def generate_signatures_for_incident_medias(\n        self, user_id: str, data: IncidentSignatureRequest\n    ):\n        signatures = []",
         "detail": "app.services.cloudinary_service",
         "documentation": {}
     },
@@ -2438,7 +2580,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI(title=\"sahayog\", lifespan=lifespan)\ninclude_base_router(app)\nexception_handler_caller(app)\napp.add_middleware(LoggingMiddleware)",
+        "peekOfCode": "app = FastAPI(title=\"sahayog\", lifespan=lifespan)\ninclude_base_router(app)\nexception_handler_caller(app)\napp.add_middleware(LoggingMiddleware)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_credentials=True,\n    allow_headers=[\"*\"],\n    allow_methods=[\"*\"],",
         "detail": "app.main",
         "documentation": {}
     }

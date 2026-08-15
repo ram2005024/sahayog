@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field, field_validator
 
 from app.modules.incident.models.incident import Priority
 from app.modules.incident.schemas.annotation import Details
+from app.schemas.media_schema import IncidentMediaSchema
 
 
 class IncidentCreateSchema(BaseModel):
@@ -16,6 +17,7 @@ class IncidentCreateSchema(BaseModel):
     latitude: float
     longitude: float
     details: Annotated[Details, Field(discriminator="type")]
+    medias: list[IncidentMediaSchema] | None = None
 
     @field_validator("latitude", "longitude", mode="before")
     def normalize_lat_long(cls, val):

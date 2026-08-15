@@ -65,9 +65,8 @@ class Incident(BaseUserModel):
     profile_audit: Mapped["ProfileAudit|None"] = relationship(
         "ProfileAudit", back_populates="incidents"
     )  # Exists when the user is even deleted
-    incident_medias: Mapped["IncidentMedia"] = relationship(
-        "incident_medias.id",
+    incident_medias: Mapped[list["IncidentMedia"]] = relationship(
+        "IncidentMedia",
         back_populates="incident",
-        uselist=False,
         cascade="all,delete-orphan",
     )

@@ -6,6 +6,7 @@ from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base_user_model import BaseUserModel
+from app.modules.incident.models.incident_media import IncidentMedia
 
 if TYPE_CHECKING:
     from app.modules.auth.models.user import User
@@ -29,4 +30,7 @@ class Profile(BaseUserModel):
     user: Mapped["User"] = relationship("User", back_populates="profile")
     registered_incidents: Mapped[list["Incident"] | None] = relationship(
         "Incident", back_populates="reported_by"
+    )
+    user_incident_images: Mapped[list["IncidentMedia"]] = relationship(
+        "IncidentMedia", cascade="all", back_populates="uploaded_by"
     )

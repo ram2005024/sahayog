@@ -9,7 +9,7 @@ from app.modules.incident.models.incident import IncidentCategory
 
 class RescueSchema(BaseModel):
     type: Literal[IncidentCategory.RESCUE]
-    no_of_peoples_affected: str
+    no_of_peoples_affected: int
     no_of_volunteers_required: int = 1
     life_threat: bool = False
 

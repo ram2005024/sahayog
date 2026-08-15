@@ -27,7 +27,7 @@ class IncidentMedia(BaseUserModel):
     )
     image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)
     audio_url: Mapped[str | None]
-    types: Mapped[list[MediaTypes]] = mapped_column(
+    type: Mapped[MediaTypes] = mapped_column(
         ARRAY(ENUM(MediaTypes, name="media_types_incident"))
     )
     uploaded_by_profile_id: Mapped[uuid.UUID] = mapped_column(

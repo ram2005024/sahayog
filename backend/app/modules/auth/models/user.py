@@ -9,7 +9,6 @@ from app.models.base_user_model import BaseUserModel
 
 if TYPE_CHECKING:
     from app.modules.auth.models.profiles.citizen_profile import Profile
-    from app.modules.incident.models.incident_media import IncidentMedia
 
 
 # Role enums
@@ -42,8 +41,4 @@ class User(BaseUserModel):
     provider_id: Mapped[str] = mapped_column(unique=True, nullable=True)
     profile: Mapped["Profile"] = relationship(
         "Profile", back_populates="user", cascade="all,delete-orphan", uselist=False
-    )
-
-    user_incident_images: Mapped["IncidentMedia"] = relationship(
-        "IncidentMedia", back_populates="uploaded_by"
     )
