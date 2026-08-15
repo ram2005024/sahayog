@@ -18,6 +18,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { IncidentService } from "@/services/incident.service";
+import { uploadToCloudinary } from "@/utils/uploadToCloudinary";
 import Image from "next/image";
 import MedicalForm from "./FormCategories/medical-form";
 import RescueForm from "./FormCategories/rescue-form";
@@ -103,16 +105,44 @@ export default function IncidentForm() {
       form.setValue("audio", file);
     }
   };
+  const handleFormSubmit = async (data: IncidentCreatePayload) => {
+    const file_types: Array<"image" | "audio"> = [];
+    const allFiles = [];
+    if (data.images) {
+      allFiles.push(...data.images);
+      for (let i = 0; i < data.images.length; i++) {
+        file_types.push("image");
+      }
+    }
+    if (data.audio) {
+      file_types.push("audio");
+      allFiles.push(data.audio);
+    }
+    const file_length = allFiles.length;
+    if (file_length > 0) {
+      try {
+        const signatures = await IncidentService.getSignatures({
+          file_length,
+          file_types,
+        });
+        const results = [];
+        for (let i = 0; i <= file_length - 1; i++) {
+          const uploadResponse = await uploadToCloudinary(
+            allFiles[0],
+            signatures.signatures[i],
+          );
+          results.push(uploadResponse);
+        }
+        console.log(results);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  };
+
   return (
     <form
-      onSubmit={form.handleSubmit(
-        (data: IncidentCreatePayload) => {
-          console.log(data);
-        },
-        (errors) => {
-          console.log("VALIDATION ERRORS:", errors);
-        },
-      )}
+      onSubmit={form.handleSubmit(handleFormSubmit)}
       className="space-y-6 max-w-lg mx-auto p-6 border rounded-md shadow-sm"
     >
       {/* Heading */}
