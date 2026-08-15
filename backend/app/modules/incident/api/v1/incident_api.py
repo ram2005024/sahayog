@@ -11,7 +11,7 @@ from app.modules.incident.dependencies.service_factory import (
 )
 from app.modules.incident.schemas.incident import (
     IncidentCreateSchema,
-    IncidentReadBasic,
+    IncidentWithMediaRequestSchema,
 )
 from app.modules.incident.services.incident_idempotancy_service import (
     IncidentIdempotancyService,
@@ -23,9 +23,9 @@ incident_router = APIRouter(prefix="/sos/incident", tags=["Incident apis"])
 
 
 # CREATE INCIDENT
-@incident_router.post("/", response_model=SuccessResponse[IncidentReadBasic])
+@incident_router.post("/", response_model=SuccessResponse[None])
 async def create_incident_endpoint(
-    data: IncidentCreateSchema,
+    data: IncidentWithMediaRequestSchema,
     key: Annotated[
         str,
         Depends(get_idempotancy_key),
@@ -43,9 +43,13 @@ async def create_incident_endpoint(
                 await asyncio.sleep(0.05)
         if await idempotancy_service.check_incident_key(key):
             return SuccessResponse(message="Already processed")
-            # Create the incident
-        incident = await incident_service.create_incident_service(data)
+        # Create the incident first
+        incident_data = IncidentCreateSchema(**data.model_dump(exclude={"medias"}))
+        incident = await incident_service.create_incident_service(incident_data)
+        # For upload medias
+        if data.medias and (len(data.medias) > 0):
+            await incident_service.save_incident_medias(data, incident_id=incident.id)
         await idempotancy_service.set_idempotancy_incident_key(key)
-        return SuccessResponse(message="Incident created succssfuly", data=incident)
+        return SuccessResponse(message="Incident Created Successfully")
     finally:
         await idempotancy_service.delete_lock_key(key)

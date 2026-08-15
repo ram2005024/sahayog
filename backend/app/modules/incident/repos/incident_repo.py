@@ -1,9 +1,9 @@
 from geoalchemy2.shape import from_shape
 from shapely.geometry import Point
-from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.modules.incident.models.incident import Incident
+from app.modules.incident.models.incident_media import IncidentMedia
 from app.modules.incident.schemas.incident import IncidentCreateSchema
 
 
@@ -26,7 +26,16 @@ class IncidentRepo:
         self.db.add(new_data)
         await self.db.flush()
         await self.db.commit()
-        new_data = (
-            await self.db.execute(select(Incident).where(Incident.id == new_data.id))
-        ).scalar_one_or_none()
         return new_data
+
+    async def save_image_media(self, data):
+        to_put = IncidentMedia(**data)
+        self.db.add(to_put)
+        await self.db.commit()
+        return True
+
+    async def save_audio_media(self, data):
+        to_put = IncidentMedia(**data)
+        self.db.add(to_put)
+        await self.db.commit()
+        return True

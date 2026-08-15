@@ -229,14 +229,6 @@
         "documentation": {}
     },
     {
-        "label": "select",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "op",
         "importPath": "alembic",
         "description": "alembic",
@@ -855,6 +847,14 @@
         "documentation": {}
     },
     {
+        "label": "IncidentMediaSchema",
+        "importPath": "app.schemas.media_schema",
+        "description": "app.schemas.media_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.media_schema",
+        "documentation": {}
+    },
+    {
         "label": "IncidentSignatureRequest",
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
@@ -1267,6 +1267,14 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "Text",
         "importPath": "rich.text",
         "description": "rich.text",
@@ -1379,6 +1387,14 @@
         "documentation": {}
     },
     {
+        "label": "IncidentMedia",
+        "importPath": "app.modules.incident.models.incident_media",
+        "description": "app.modules.incident.models.incident_media",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.models.incident_media",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -1444,7 +1460,7 @@
         "documentation": {}
     },
     {
-        "label": "IncidentReadBasic",
+        "label": "IncidentWithMediaRequestSchema",
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
         "isExtraImport": true,
@@ -1461,6 +1477,14 @@
     },
     {
         "label": "IncidentCreateSchema",
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "isExtraImport": true,
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
+        "label": "IncidentWithMediaRequestSchema",
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
         "isExtraImport": true,
@@ -2301,7 +2325,7 @@
         "kind": 5,
         "importPath": "app.modules.incident.api.v1.incident_api",
         "description": "app.modules.incident.api.v1.incident_api",
-        "peekOfCode": "incident_router = APIRouter(prefix=\"/sos/incident\", tags=[\"Incident apis\"])\n# CREATE INCIDENT\n@incident_router.post(\"/\", response_model=SuccessResponse[IncidentReadBasic])\nasync def create_incident_endpoint(\n    data: IncidentCreateSchema,\n    key: Annotated[\n        str,\n        Depends(get_idempotancy_key),\n    ],\n    user: Annotated[str, Depends(get_user)],",
+        "peekOfCode": "incident_router = APIRouter(prefix=\"/sos/incident\", tags=[\"Incident apis\"])\n# CREATE INCIDENT\n@incident_router.post(\"/\", response_model=SuccessResponse[None])\nasync def create_incident_endpoint(\n    data: IncidentWithMediaRequestSchema,\n    key: Annotated[\n        str,\n        Depends(get_idempotancy_key),\n    ],\n    user: Annotated[str, Depends(get_user)],",
         "detail": "app.modules.incident.api.v1.incident_api",
         "documentation": {}
     },
@@ -2414,11 +2438,20 @@
         "documentation": {}
     },
     {
+        "label": "IncidentWithMediaRequestSchema",
+        "kind": 6,
+        "importPath": "app.modules.incident.schemas.incident",
+        "description": "app.modules.incident.schemas.incident",
+        "peekOfCode": "class IncidentWithMediaRequestSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    medias: list[IncidentMediaSchema] | None = None",
+        "detail": "app.modules.incident.schemas.incident",
+        "documentation": {}
+    },
+    {
         "label": "IncidentCreateSchema",
         "kind": 6,
         "importPath": "app.modules.incident.schemas.incident",
         "description": "app.modules.incident.schemas.incident",
-        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    medias: list[IncidentMediaSchema] | None = None",
+        "peekOfCode": "class IncidentCreateSchema(BaseModel):\n    heading: str\n    description: str | None = None\n    user_profile_id: str | None = None\n    priority: Priority\n    location_description: str\n    latitude: float\n    longitude: float\n    details: Annotated[Details, Field(discriminator=\"type\")]\n    @field_validator(\"user_profile_id\", mode=\"before\")",
         "detail": "app.modules.incident.schemas.incident",
         "documentation": {}
     },
@@ -2490,7 +2523,7 @@
         "kind": 6,
         "importPath": "app.modules.incident.services.incident_service",
         "description": "app.modules.incident.services.incident_service",
-        "peekOfCode": "class IncidentService:\n    def __init__(self, incident_repo: IncidentRepo) -> None:\n        self.incident_repo = incident_repo\n    # Services will come here\n    async def create_incident_service(self, data: IncidentCreateSchema):\n        return await self.incident_repo.create_incident(data)",
+        "peekOfCode": "class IncidentService:\n    def __init__(self, incident_repo: IncidentRepo) -> None:\n        self.incident_repo = incident_repo\n    # Services will come here\n    async def create_incident_service(self, data: IncidentCreateSchema):\n        return await self.incident_repo.create_incident(data)\n    async def save_incident_medias(\n        self, data: IncidentWithMediaRequestSchema, incident_id: UUID\n    ):\n        if not data.medias:",
         "detail": "app.modules.incident.services.incident_service",
         "documentation": {}
     },
@@ -2544,7 +2577,7 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60\nclass MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: str\n    preset: str\nclass IncidentMediaSchema(BaseModel):",
+        "peekOfCode": "class SignatureResponse(BaseModel):\n    signatures: list[SingleSignatureResponse]\n    exp_time: int = 60\nclass MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: float\n    width: int\n    height: int",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },
@@ -2553,7 +2586,7 @@
         "kind": 6,
         "importPath": "app.schemas.media_schema",
         "description": "app.schemas.media_schema",
-        "peekOfCode": "class MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: str\n    preset: str\nclass IncidentMediaSchema(BaseModel):\n    type: Literal[\"image\", \"audio\"]\n    url: str\n    meta_data: MediaMetaData",
+        "peekOfCode": "class MediaMetaData(BaseModel):\n    public_id: str\n    url: str\n    format: str\n    size: float\n    width: int\n    height: int\nclass IncidentMediaSchema(BaseModel):\n    type: Literal[\"image\", \"audio\"]\n    url: str",
         "detail": "app.schemas.media_schema",
         "documentation": {}
     },

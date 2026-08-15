@@ -41,8 +41,9 @@ class MediaMetaData(BaseModel):
     public_id: str
     url: str
     format: str
-    size: str
-    preset: str
+    size: float
+    width: int
+    height: int
 
 
 class IncidentMediaSchema(BaseModel):
