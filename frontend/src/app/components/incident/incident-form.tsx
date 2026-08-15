@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import {
@@ -18,9 +19,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useCreateIncident } from "@/hooks/useIncidents";
 import { IncidentService } from "@/services/incident.service";
-import { uploadToCloudinary } from "@/utils/uploadToCloudinary";
+import { ErrorResponse } from "@/types/common";
+import { UploadedMedia } from "@/types/incident.type";
+import { AxiosError } from "axios";
 import Image from "next/image";
+import { toast } from "sonner";
 import MedicalForm from "./FormCategories/medical-form";
 import RescueForm from "./FormCategories/rescue-form";
 
@@ -105,39 +110,30 @@ export default function IncidentForm() {
       form.setValue("audio", file);
     }
   };
+  const createIncidentMutation = useCreateIncident();
   const handleFormSubmit = async (data: IncidentCreatePayload) => {
-    const file_types: Array<"image" | "audio"> = [];
-    const allFiles = [];
-    if (data.images) {
-      allFiles.push(...data.images);
-      for (let i = 0; i < data.images.length; i++) {
-        file_types.push("image");
-      }
+    let mediaData: UploadedMedia[] = [];
+    if (data.images || data.audio) {
+      mediaData = await IncidentService.handleImageUpload(data);
     }
-    if (data.audio) {
-      file_types.push("audio");
-      allFiles.push(data.audio);
-    }
-    const file_length = allFiles.length;
-    if (file_length > 0) {
-      try {
-        const signatures = await IncidentService.getSignatures({
-          file_length,
-          file_types,
-        });
-        const results = [];
-        for (let i = 0; i <= file_length - 1; i++) {
-          const uploadResponse = await uploadToCloudinary(
-            allFiles[0],
-            signatures.signatures[i],
+    const { images, audio, ...rest } = data;
+    createIncidentMutation.mutate(
+      { ...rest, medias: mediaData },
+      {
+        onSuccess: (data) => {
+          toast.success(data.message);
+          form.reset();
+        },
+        onError: (err) => {
+          const error = err as AxiosError<ErrorResponse<null>>;
+          toast.error(
+            error.response?.data?.message ||
+              error.message ||
+              "Something went wrong",
           );
-          results.push(uploadResponse);
-        }
-        console.log(results);
-      } catch (error) {
-        console.log(error);
-      }
-    }
+        },
+      },
+    );
   };
 
   return (
@@ -286,8 +282,12 @@ export default function IncidentForm() {
       {detailsType === "rescue" && <RescueForm form={form} />}
       {detailsType === "medical" && <MedicalForm form={form} />}
 
-      <Button type="submit" className="w-full">
-        Submit
+      <Button
+        disabled={createIncidentMutation.isPending}
+        type="submit"
+        className="w-full"
+      >
+        {createIncidentMutation.isPending ? "Saving..." : "Save"}
       </Button>
     </form>
   );
