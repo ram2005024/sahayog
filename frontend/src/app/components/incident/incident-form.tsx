@@ -283,11 +283,11 @@ export default function IncidentForm() {
       {detailsType === "medical" && <MedicalForm form={form} />}
 
       <Button
-        disabled={createIncidentMutation.isPending}
+        disabled={form.formState.isSubmitting}
         type="submit"
         className="w-full"
       >
-        {createIncidentMutation.isPending ? "Saving..." : "Save"}
+        {form.formState.isSubmitting ? "Saving..." : "Save"}
       </Button>
     </form>
   );
