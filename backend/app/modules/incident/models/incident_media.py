@@ -3,7 +3,6 @@ from enum import Enum
 from typing import TYPE_CHECKING
 
 from sqlalchemy import ARRAY, JSON, TEXT, ForeignKey
-from sqlalchemy.dialects.postgresql import ENUM
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base_user_model import BaseUserModel
@@ -27,9 +26,7 @@ class IncidentMedia(BaseUserModel):
     )
     image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(TEXT), nullable=True)
     audio_url: Mapped[str | None]
-    type: Mapped[MediaTypes] = mapped_column(
-        ARRAY(ENUM(MediaTypes, name="media_types_incident"))
-    )
+    type: Mapped[str]
     uploaded_by_profile_id: Mapped[uuid.UUID] = mapped_column(
         ForeignKey("profiles.id"), nullable=True
     )

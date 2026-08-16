@@ -29,6 +29,7 @@ class IncidentRepo:
         return new_data
 
     async def save_image_media(self, data):
+        print("Image repo ma akko data", data)
         to_put = IncidentMedia(**data)
         self.db.add(to_put)
         await self.db.commit()
