@@ -313,7 +313,7 @@ export default function IncidentForm() {
         type="submit"
         className="w-full cursor-pointer"
       >
-        {form.formState.isSubmitting ? "Saving..." : "Save"}
+        {form.formState.isSubmitting ? "Saving...." : "Save"}
       </Button>
     </form>
   );
