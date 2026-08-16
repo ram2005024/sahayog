@@ -19,20 +19,22 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { useCreateIncident } from "@/hooks/useIncidents";
 import { IncidentService } from "@/services/incident.service";
 import { ErrorResponse } from "@/types/common";
 import { UploadedMedia } from "@/types/incident.type";
 import { AxiosError } from "axios";
 import Image from "next/image";
+import { useState } from "react";
 import { toast } from "sonner";
 import MedicalForm from "./FormCategories/medical-form";
 import RescueForm from "./FormCategories/rescue-form";
 
 export default function IncidentForm() {
+  const [loadingLocation, setLoadingLocation] = useState<boolean>(false);
   const form = useForm<IncidentCreateForm, unknown, IncidentCreatePayload>({
     resolver: zodResolver(IncidentCreateSchema),
-
     defaultValues: {
       heading: "",
       description: "",
@@ -80,16 +82,24 @@ export default function IncidentForm() {
       form.setError("longitude", { message: "Geolocation not supported" });
       return;
     }
+    setLoadingLocation(true);
 
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         form.setValue("latitude", String(pos.coords.latitude));
         form.setValue("longitude", String(pos.coords.longitude));
         form.clearErrors(["latitude", "longitude"]);
+        setLoadingLocation(false);
       },
+
       () => {
-        form.setError("latitude", { message: "Location permission required" });
-        form.setError("longitude", { message: "Location permission required" });
+        form.setError("latitude", {
+          message: "Location permission required",
+        });
+        form.setError("longitude", {
+          message: "Location permission required",
+        });
+        setLoadingLocation(false);
       },
       { enableHighAccuracy: true },
     );
@@ -151,6 +161,17 @@ export default function IncidentForm() {
         />
         <FieldError>{form.formState.errors.heading?.message}</FieldError>
       </Field>
+      {/* Description */}
+      <Field>
+        <FieldLabel htmlFor="description">Description</FieldLabel>
+        <Textarea
+          id="description"
+          {...form.register("description")}
+          placeholder="Incident description"
+          className="resize-none"
+        />
+        <FieldError>{form.formState.errors.description?.message}</FieldError>
+      </Field>
 
       {/* Location */}
       <div className="grid grid-cols-2 gap-4">
@@ -168,8 +189,13 @@ export default function IncidentForm() {
       </div>
 
       {(!lat || !lon) && (
-        <Button type="button" onClick={handleGetLocation} className="w-full">
-          Enable Location
+        <Button
+          disabled={loadingLocation}
+          type="button"
+          onClick={handleGetLocation}
+          className="w-full cursor-pointer"
+        >
+          {loadingLocation ? "Enabling..." : "Enable location"}
         </Button>
       )}
       <Field>
@@ -285,7 +311,7 @@ export default function IncidentForm() {
       <Button
         disabled={form.formState.isSubmitting}
         type="submit"
-        className="w-full"
+        className="w-full cursor-pointer"
       >
         {form.formState.isSubmitting ? "Saving..." : "Save"}
       </Button>
